@@ -1,0 +1,45 @@
+:root {
+    --opening-icon-font-family: "Space Mono", Helvetica;
+    --opening-icon-font-weight: 400;
+    --opening-icon-font-size: 48px;
+    --opening-icon-letter-spacing: 0.96px;
+    --opening-icon-line-height: normal;
+    --opening-icon-font-style: normal;
+    --paragraph-font-family: "Inter Tight", Helvetica;
+    --paragraph-font-weight: 400;
+    --paragraph-font-size: 29px;
+    --paragraph-letter-spacing: 0px;
+    --paragraph-line-height: normal;
+    --paragraph-font-style: normal;
+    --heading-1-font-family: "Inter Tight", Helvetica;
+    --heading-1-font-weight: 300;
+    --heading-1-font-size: 96px;
+    --heading-1-letter-spacing: 1.92px;
+    --heading-1-line-height: normal;
+    --heading-1-font-style: normal;
+    --ICON-1-font-family: "Inter Tight", Helvetica;
+    --ICON-1-font-weight: 800;
+    --ICON-1-font-size: 64px;
+    --ICON-1-letter-spacing: 1.28px;
+    --ICON-1-line-height: normal;
+    --ICON-1-font-style: normal;
+    --ICON-2-font-family: "Inter Tight", Helvetica;
+    --ICON-2-font-weight: 800;
+    --ICON-2-font-size: 77px;
+    --ICON-2-letter-spacing: 1.54px;
+    --ICON-2-line-height: normal;
+    --ICON-2-font-style: normal;
+    --content-font-family: "Space Grotesk", Helvetica;
+    --content-font-weight: 700;
+    --content-font-size: 183px;
+    --content-letter-spacing: 3.66px;
+    --content-line-height: normal;
+    --content-font-style: normal;
+    --sub-font-family: "Inter Tight", Helvetica;
+    --sub-font-weight: 400;
+    --sub-font-size: 20px;
+    --sub-letter-spacing: 0px;
+    --sub-line-height: normal;
+    --sub-font-style: normal;
+  }
+  

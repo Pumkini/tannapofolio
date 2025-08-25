@@ -1,0 +1,1240 @@
+/* =========================
+   ABOUT · Base & Reset
+   ========================= */
+html,
+body {
+  background: #000;
+  margin    : 0;
+}
+
+/* avoid white strip */
+* {
+  box-sizing: border-box;
+}
+
+/* Container grid from Figma export */
+.about-me {
+  background-color: #000;
+  display         : grid;
+  justify-items   : center;
+  align-items     : start;
+  width           : 100vw;
+}
+
+.about-me .div {
+  background-color: #000;
+  overflow        : visible;
+  width           : 100%;
+  /* prevent clipping */
+  height          : 5504px;
+  position        : relative;
+}
+
+/* ===== Hero block & content (original placements) ===== */
+.about-me .overlap {
+  position: absolute;
+  width   : 1795px;
+  height  : 2144px;
+  top     : 2441px;
+  left    : 0;
+}
+
+.about-me .hi-i-m-thanh-often {
+  position      : absolute;
+  width         : 551px;
+  top           : 263px;
+  left          : 812px;
+  font-family   : var(--paragraph-font-family);
+  font-weight   : var(--paragraph-font-weight);
+  color         : #fff;
+  font-size     : var(--paragraph-font-size);
+  letter-spacing: var(--paragraph-letter-spacing);
+  line-height   : var(--paragraph-line-height);
+  font-style    : var(--paragraph-font-style);
+}
+
+.about-me .overlap-group {
+  position: absolute;
+  width   : 1795px;
+  height  : 2144px;
+  top     : 0;
+  left    : 0;
+  z-index : 50;
+}
+
+.about-me .frame {
+  position        : absolute;
+  width           : 650px;
+  height          : 665px;
+  top             : 0;
+  left            : 38px;
+  background-color: #fff;
+}
+
+.about-me .element {
+  position    : absolute;
+  width       : 650px;
+  height      : 665px;
+  top         : 0;
+  left        : 0;
+  aspect-ratio: 0.56;
+  object-fit  : cover;
+}
+
+/* ---------- EYEBALL (rotate-only, original spot, not clipped) ---------- */
+.about-me .overlap,
+.about-me .overlap-group,
+.about-me .overlap-3,
+.about-me .overlap-4 {
+  overflow: visible !important;
+}
+
+.about-me .eyeball {
+  position        : absolute;
+  left            : 0;
+  /* original spot */
+  top             : 326px;
+  /* original spot */
+  width           : 480px;
+  /* keep original width */
+  height          : auto;
+  /* avoid distortion */
+  transform       : rotate(var(--eye-rot, 0deg));
+  transform-origin: 42% 58%;
+  /* around the pupil */
+  z-index         : 40;
+  /* under the spikey overlay */
+  pointer-events  : none;
+  will-change     : transform;
+}
+
+/* Spikey overlays must stay above the eye */
+.about-me .spikey,
+.about-me .spike {
+  position      : absolute;
+  z-index       : 60;
+  pointer-events: none;
+}
+
+/* ---- everything else exactly as before ---- */
+.about-me .text-wrapper {
+  position      : absolute;
+  width         : 737px;
+  top           : 1097px;
+  left          : 343px;
+  font-family   : var(--paragraph-font-family);
+  font-weight   : var(--paragraph-font-weight);
+  color         : #fff;
+  font-size     : var(--paragraph-font-size);
+  letter-spacing: var(--paragraph-letter-spacing);
+  line-height   : var(--paragraph-line-height);
+  font-style    : var(--paragraph-font-style);
+}
+
+.about-me .text-wrapper-2 {
+  position      : absolute;
+  width         : 169px;
+  top           : 2008px;
+  left          : 779px;
+  font-family   : var(--paragraph-font-family);
+  font-weight   : var(--paragraph-font-weight);
+  color         : #fff;
+  font-size     : var(--paragraph-font-size);
+  letter-spacing: var(--paragraph-letter-spacing);
+  line-height   : var(--paragraph-line-height);
+  font-style    : var(--paragraph-font-style);
+}
+
+.about-me .text-wrapper-3 {
+  position      : absolute;
+  width         : 169px;
+  top           : 1835px;
+  left          : 779px;
+  font-family   : var(--paragraph-font-family);
+  font-weight   : var(--paragraph-font-weight);
+  color         : #fff;
+  font-size     : var(--paragraph-font-size);
+  letter-spacing: var(--paragraph-letter-spacing);
+  line-height   : var(--paragraph-line-height);
+  font-style    : var(--paragraph-font-style);
+}
+
+.about-me .unity {
+  position    : absolute;
+  width       : 124px;
+  height      : 101px;
+  top         : 1969px;
+  left        : 668px;
+  aspect-ratio: 1.23;
+  object-fit  : cover;
+}
+
+.about-me .gear {
+  position    : absolute;
+  width       : 884px;
+  height      : 1135px;
+  top         : 1009px;
+  left        : 911px;
+  aspect-ratio: .78;
+}
+
+.about-me .img {
+  position  : absolute;
+  width     : 529px;
+  height    : 1135px;
+  top       : 0;
+  left      : 0;
+  object-fit: cover;
+}
+
+.about-me .text-wrapper-4 {
+  position      : absolute;
+  width         : 581px;
+  top           : 147px;
+  left          : 797px;
+  font-family   : var(--heading-1-font-family);
+  font-weight   : var(--heading-1-font-weight);
+  color         : #fff;
+  font-size     : var(--heading-1-font-size);
+  letter-spacing: var(--heading-1-letter-spacing);
+  line-height   : var(--heading-1-line-height);
+  font-style    : var(--heading-1-font-style);
+}
+
+.about-me .text-wrapper-5 {
+  position      : absolute;
+  width         : 581px;
+  top           : 1628px;
+  left          : 87px;
+  font-family   : var(--heading-1-font-family);
+  font-weight   : var(--heading-1-font-weight);
+  color         : #fff;
+  font-size     : var(--heading-1-font-size);
+  letter-spacing: var(--heading-1-letter-spacing);
+  line-height   : var(--heading-1-line-height);
+  font-style    : var(--heading-1-font-style);
+}
+
+.about-me .text-wrapper-6 {
+  position      : absolute;
+  width         : 169px;
+  top           : 1835px;
+  left          : 202px;
+  font-family   : var(--paragraph-font-family);
+  font-weight   : var(--paragraph-font-weight);
+  color         : #fff;
+  font-size     : var(--paragraph-font-size);
+  letter-spacing: var(--paragraph-letter-spacing);
+  line-height   : var(--paragraph-line-height);
+  font-style    : var(--paragraph-font-style);
+}
+
+.about-me .text-wrapper-7 {
+  position      : absolute;
+  width         : 169px;
+  top           : 2008px;
+  left          : 202px;
+  font-family   : var(--paragraph-font-family);
+  font-weight   : var(--paragraph-font-weight);
+  color         : #fff;
+  font-size     : var(--paragraph-font-size);
+  letter-spacing: var(--paragraph-letter-spacing);
+  line-height   : var(--paragraph-line-height);
+  font-style    : var(--paragraph-font-style);
+}
+
+.about-me .ae {
+  position    : absolute;
+  width       : 80px;
+  height      : 80px;
+  top         : 1814px;
+  left        : 94px;
+  aspect-ratio: 1;
+  object-fit  : cover;
+}
+
+.about-me .ai {
+  position    : absolute;
+  width       : 80px;
+  height      : 81px;
+  top         : 1979px;
+  left        : 94px;
+  aspect-ratio: 1;
+  object-fit  : cover;
+}
+
+.about-me .blender {
+  position    : absolute;
+  width       : 98px;
+  height      : 80px;
+  top         : 1814px;
+  left        : 668px;
+  aspect-ratio: 1.23;
+  object-fit  : cover;
+}
+
+.about-me .text-wrapper-8 {
+  position      : absolute;
+  width         : 169px;
+  top           : 4622px;
+  left          : 202px;
+  font-family   : var(--paragraph-font-family);
+  font-weight   : var(--paragraph-font-weight);
+  color         : #fff;
+  font-size     : var(--paragraph-font-size);
+  letter-spacing: var(--paragraph-letter-spacing);
+  line-height   : var(--paragraph-line-height);
+  font-style    : var(--paragraph-font-style);
+}
+
+.about-me .text-wrapper-9 {
+  position      : absolute;
+  width         : 169px;
+  top           : 4794px;
+  left          : 202px;
+  font-family   : var(--paragraph-font-family);
+  font-weight   : var(--paragraph-font-weight);
+  color         : #fff;
+  font-size     : var(--paragraph-font-size);
+  letter-spacing: var(--paragraph-letter-spacing);
+  line-height   : var(--paragraph-line-height);
+  font-style    : var(--paragraph-font-style);
+}
+
+.about-me .overlap-2 {
+  position: absolute;
+  width   : 373px;
+  height  : 101px;
+  top     : 4585px;
+  left    : 669px;
+}
+
+.about-me .text-wrapper-10 {
+  position      : absolute;
+  width         : 263px;
+  top           : 37px;
+  left          : 110px;
+  font-family   : var(--paragraph-font-family);
+  font-weight   : var(--paragraph-font-weight);
+  color         : #fff;
+  font-size     : var(--paragraph-font-size);
+  letter-spacing: var(--paragraph-letter-spacing);
+  line-height   : var(--paragraph-line-height);
+  font-style    : var(--paragraph-font-style);
+}
+
+.about-me .vscode {
+  position    : absolute;
+  width       : 124px;
+  height      : 101px;
+  top         : 0;
+  left        : 0;
+  aspect-ratio: 1.23;
+  object-fit  : cover;
+}
+
+/* Header/hero cluster */
+.about-me .overlap-3 {
+  position: absolute;
+  height  : 2265px;
+  top     : 21px;
+  left    : 0;
+}
+
+.about-me .overlap-4 {
+  position   : absolute;
+  /* width   : 1440px; */
+  height     : 2260px;
+  top        : 5px;
+  left       : 0;
+}
+
+.about-me .overlap-group-wrapper {
+  width   : 1440px;
+  height  : 1028px;
+  top     : 119px;
+  position: absolute;
+  left    : 0;
+}
+
+.about-me .overlap-group-2 {
+  position: relative;
+  width   : 1356px;
+  height  : 945px;
+  left    : 42px;
+}
+
+.about-me .bubble {
+  width       : 162px;
+  height      : 174px;
+  top         : 515px;
+  left        : 620px;
+  position    : absolute;
+  aspect-ratio: .93;
+}
+
+.about-me .bubble-2 {
+  width       : 162px;
+  height      : 174px;
+  top         : 483px;
+  left        : 574px;
+  position    : absolute;
+  aspect-ratio: .93;
+}
+
+.about-me .bubble-3 {
+  width       : 162px;
+  height      : 174px;
+  top         : 428px;
+  left        : 670px;
+  position    : absolute;
+  aspect-ratio: .93;
+}
+
+.about-me .bubble-4 {
+  width       : 131px;
+  height      : 141px;
+  top         : 548px;
+  left        : 704px;
+  position    : absolute;
+  aspect-ratio: .93;
+}
+
+.about-me .bubble-5 {
+  width       : 162px;
+  height      : 174px;
+  top         : 579px;
+  left        : 585px;
+  position    : absolute;
+  aspect-ratio: .93;
+}
+
+.about-me .bubble-6 {
+  width       : 162px;
+  height      : 174px;
+  top         : 325px;
+  left        : 608px;
+  position    : absolute;
+  aspect-ratio: .93;
+}
+
+.about-me .bubble-7 {
+  width       : 162px;
+  height      : 174px;
+  top         : 325px;
+  left        : 670px;
+  position    : absolute;
+  aspect-ratio: .93;
+}
+
+.about-me .bubble-8 {
+  width       : 105px;
+  height      : 113px;
+  top         : 507px;
+  left        : 527px;
+  position    : absolute;
+  aspect-ratio: .93;
+}
+
+.about-me .bubble-9 {
+  width       : 162px;
+  height      : 174px;
+  top         : 293px;
+  left        : 516px;
+  position    : absolute;
+  aspect-ratio: .93;
+}
+
+.about-me .bubble-10 {
+  width       : 93px;
+  height      : 100px;
+  top         : 373px;
+  left        : 585px;
+  position    : absolute;
+  aspect-ratio: .93;
+}
+
+.about-me .bubble-11 {
+  width       : 93px;
+  height      : 100px;
+  top         : 433px;
+  left        : 689px;
+  position    : absolute;
+  aspect-ratio: .93;
+}
+
+.about-me .bubble-12 {
+  width       : 45px;
+  height      : 48px;
+  top         : 467px;
+  left        : 551px;
+  position    : absolute;
+  aspect-ratio: .93;
+}
+
+.about-me .img-2 {
+  position    : absolute;
+  width       : 736px;
+  height      : 945px;
+  top         : 0;
+  left        : 333px;
+  aspect-ratio: .78;
+  object-fit  : cover;
+}
+
+.about-me .text-wrapper-11 {
+  width         : 1356px;
+  top           : 362px;
+  left          : 0;
+  position      : absolute;
+  font-family   : var(--content-font-family);
+  font-weight   : var(--content-font-weight);
+  color         : #87df2b;
+  font-size     : var(--content-font-size);
+  text-align    : center;
+  letter-spacing: var(--content-letter-spacing);
+  line-height   : var(--content-line-height);
+  font-style    : var(--content-font-style);
+}
+
+.about-me .spike {
+  position      : absolute;
+  width         : 719px;
+  height        : 1196px;
+  top           : 1064px;
+  left          : 721px;
+  aspect-ratio  : .78;
+  object-fit    : cover;
+  z-index       : 60;
+  pointer-events: none;
+}
+
+.about-me .p {
+  position      : absolute;
+  width         : 895px;
+  top           : 1468px;
+  left          : 120px;
+  font-family   : "Inter Tight", Helvetica;
+  font-weight   : 700;
+  color         : #fff;
+  font-size     : 96px;
+  letter-spacing: 1.92px;
+  line-height   : normal;
+}
+
+/* Footer */
+.about-me .ps {
+  position    : absolute;
+  width       : 81px;
+  height      : 80px;
+  top         : 4596px;
+  left        : 94px;
+  aspect-ratio: 1.01;
+  object-fit  : cover;
+}
+
+.about-me .figma {
+  position    : absolute;
+  width       : 77px;
+  height      : 103px;
+  top         : 4761px;
+  left        : 95px;
+  aspect-ratio: .75;
+}
+
+.about-me .footer {
+  position        : absolute;
+  width           : 1440px;
+  height          : 467px;
+  top             : 5002px;
+  left            : 0;
+  background-color: #181717;
+}
+
+.about-me .emali-nalun {
+  position      : absolute;
+  width         : 757px;
+  top           : 145px;
+  left          : 418px;
+  font-family   : var(--paragraph-font-family);
+  font-weight   : var(--paragraph-font-weight);
+  color         : #fff;
+  font-size     : var(--paragraph-font-size);
+  letter-spacing: var(--paragraph-letter-spacing);
+  line-height   : var(--paragraph-line-height);
+  font-style    : var(--paragraph-font-style);
+}
+
+.about-me .image {
+  position    : absolute;
+  width       : 119px;
+  height      : 119px;
+  top         : 174px;
+  left        : 1233px;
+  aspect-ratio: 1;
+  object-fit  : cover;
+}
+
+.about-me .embryo {
+  position    : absolute;
+  width       : 394px;
+  height      : 467px;
+  top         : 0;
+  left        : 0;
+  aspect-ratio: .8;
+}
+
+/* =========================
+   Left logo (Home) micro feel
+   ========================= */
+.logo-link {
+  position: absolute;
+  top     : 0;
+  left    : 53px;
+  display : inline-block;
+}
+
+.about-me .biocircuit {
+  cursor          : pointer;
+  transform-origin: center;
+  transition      : transform .25s ease, filter .3s ease, opacity .25s ease;
+  animation       : logoFloat 6s ease-in-out infinite;
+}
+
+.logo-link:hover .biocircuit {
+  transform: translateY(-2px) scale(1.06) rotate(-3deg);
+  filter   : drop-shadow(0 0 12px #87df2b);
+}
+
+.logo-link:active .biocircuit {
+  transform: translateY(0) scale(.94);
+  filter   : none;
+}
+
+@keyframes logoFloat {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+/* =========================
+   Right Heart · Dropdown menu
+   ========================= */
+.about-me .header-icon {
+  position: absolute;
+  top     : 0;
+  left    : 1106px;
+  width   : 298px;
+  height  : 141px;
+  z-index : 80;
+  /* above hero art */
+}
+
+.about-me .header-icon .nav-toggle {
+  position  : absolute;
+  top       : 24px;
+  left      : 203px;
+  width     : 95px;
+  height    : 95px;
+  padding   : 0;
+  border    : 0;
+  background: transparent;
+  cursor    : pointer;
+  z-index   : 100;
+}
+
+/* Heart (rotates only when open) */
+.about-me .header-icon .nav-toggle .heart {
+  --rot           : 180deg;
+  /* closed */
+  display         : block;
+  width           : 100%;
+  height          : 100%;
+  transform-origin: 50% 50%;
+  transform       : rotate(var(--rot));
+  transition      : transform .26s cubic-bezier(.2, .7, .2, 1), filter .3s ease;
+}
+
+.about-me .header-icon.is-open .nav-toggle .heart {
+  --rot: 0deg;
+}
+
+.about-me .header-icon .nav-toggle:hover .heart {
+  filter: drop-shadow(0 0 12px #87df2b);
+}
+
+.about-me .header-icon .nav-toggle:active .heart {
+  filter: none;
+}
+
+/* Dropdown list: slide/fade + stagger reveal */
+.about-me .header-icon .quick-nav {
+  position        : absolute;
+  top             : 140px;
+  right           : 0;
+  display         : flex;
+  flex-direction  : column;
+  gap             : 28px;
+  margin          : 0;
+  padding         : 0;
+  pointer-events  : none;
+  opacity         : 0;
+  transform       : translateY(6px);
+  transform-origin: top right;
+  transition      : opacity .18s cubic-bezier(.2, .7, .2, 1),
+    transform .18s cubic-bezier(.2, .7, .2, 1);
+  z-index: 90;
+}
+
+.about-me .header-icon.is-open .quick-nav {
+  pointer-events: auto;
+  opacity       : 1;
+  transform     : translateY(0);
+}
+
+.about-me .header-icon .quick-nav a {
+  color          : #fff;
+  text-decoration: none;
+  font-family    : "Space Mono", monospace;
+  font-weight    : 400;
+  font-size      : clamp(32px, 6.5vw, 90px);
+  line-height    : 1.1;
+  letter-spacing : .02em;
+  opacity        : 0;
+  transform      : translateY(6px);
+  transition     : color .18s ease,
+    opacity .16s cubic-bezier(.22, 1, .36, 1),
+    transform .16s cubic-bezier(.22, 1, .36, 1);
+}
+
+.about-me .header-icon .quick-nav a:hover {
+  color: #87DF2B;
+}
+
+.about-me .header-icon.is-open .quick-nav a:nth-child(1) {
+  opacity         : 1;
+  transform       : none;
+  transition-delay: .03s;
+}
+
+.about-me .header-icon.is-open .quick-nav a:nth-child(2) {
+  opacity         : 1;
+  transform       : none;
+  transition-delay: .07s;
+}
+
+.about-me .header-icon.is-open .quick-nav a:nth-child(3) {
+  opacity         : 1;
+  transform       : none;
+  transition-delay: .11s;
+}
+
+.about-me .header-icon.is-open .quick-nav a:nth-child(4) {
+  opacity         : 1;
+  transform       : none;
+  transition-delay: .15s;
+}
+
+/* =========================
+   Gear: continuous center spin
+   ========================= */
+.about-me .gear .img {
+  position        : absolute;
+  top             : 0;
+  left            : 0;
+  width           : 100% !important;
+  height          : 100% !important;
+  object-fit      : contain !important;
+  transform-origin: 50% 50%;
+  animation       : gear-roll 12s linear infinite;
+  will-change     : transform;
+}
+
+@keyframes gear-roll {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-me .biocircuit {
+    animation: none;
+  }
+
+  .about-me .gear .img {
+    animation: none;
+  }
+}
+
+/* === ABOUT · Navigator heart + list (scoped overrides) === */
+.about-me .header-icon {
+  position      : absolute;
+  /* keep your original coords */
+  z-index       : 1000;
+  /* above surrounding art */
+  pointer-events: auto;
+}
+
+.about-me .header-icon .nav-toggle {
+  position  : absolute;
+  z-index   : 1001;
+  /* ensure the button is clickable */
+  padding   : 0;
+  border    : 0;
+  background: transparent;
+  cursor    : pointer;
+}
+
+/* Heart micro-motion + rotate-on-open (same feel as Home) */
+.about-me .header-icon .nav-toggle .heart {
+  --rot           : 180deg;
+  --ty            : 0;
+  --sc            : 1;
+  display         : block;
+  width           : 100%;
+  height          : 100%;
+  transform-origin: 50% 50%;
+  transform       : rotate(var(--rot)) translateY(var(--ty)) scale(var(--sc));
+  transition      : transform .26s cubic-bezier(.2, .7, .2, 1), filter .3s ease;
+  animation       : logoFloat 6s ease-in-out infinite;
+}
+
+.about-me .header-icon.is-open .nav-toggle .heart {
+  --rot: 0deg;
+}
+
+.about-me .header-icon .nav-toggle:hover .heart {
+  --ty  : -2px;
+  --sc  : 1.06;
+  filter: drop-shadow(0 0 12px #87DF2B);
+}
+
+.about-me .header-icon .nav-toggle:active .heart {
+  --ty  : 0;
+  --sc  : .94;
+  filter: none;
+}
+
+/* Dropdown list: slide/fade + pointer-events control */
+.about-me .header-icon .quick-nav {
+  position        : absolute;
+  top             : 140px;
+  right           : 0;
+  display         : flex;
+  flex-direction  : column;
+  gap             : 28px;
+  margin          : 0;
+  padding         : 0;
+  opacity         : 0;
+  transform       : translateY(6px);
+  pointer-events  : none;
+  /* clicks off while hidden */
+  transform-origin: top right;
+  transition      : opacity .18s cubic-bezier(.2, .7, .2, 1),
+    transform .18s cubic-bezier(.2, .7, .2, 1);
+  z-index: 1002;
+}
+
+/* honor the HTML `hidden` attribute if present */
+.about-me .header-icon .quick-nav[hidden] {
+  display: none !important;
+}
+
+.about-me .header-icon.is-open .quick-nav {
+  opacity       : 1;
+  transform     : translateY(0);
+  pointer-events: auto;
+}
+
+.about-me .header-icon .quick-nav a {
+  color          : #fff;
+  text-decoration: none;
+  font-family    : "Space Mono", monospace;
+  font-weight    : 400;
+  font-size      : clamp(32px, 6.5vw, 90px);
+  line-height    : 1.1;
+  letter-spacing : .02em;
+  opacity        : 0;
+  transform      : translateY(6px);
+  transition     : color .18s ease, opacity .16s cubic-bezier(.22, 1, .36, 1), transform .16s cubic-bezier(.22, 1, .36, 1);
+}
+
+.about-me .header-icon .quick-nav a:hover {
+  color: #87DF2B;
+}
+
+/* stagger reveal when open */
+.about-me .header-icon.is-open .quick-nav a:nth-child(1) {
+  opacity         : 1;
+  transform       : none;
+  transition-delay: .03s;
+}
+
+.about-me .header-icon.is-open .quick-nav a:nth-child(2) {
+  opacity         : 1;
+  transform       : none;
+  transition-delay: .07s;
+}
+
+.about-me .header-icon.is-open .quick-nav a:nth-child(3) {
+  opacity         : 1;
+  transform       : none;
+  transition-delay: .11s;
+}
+
+.about-me .header-icon.is-open .quick-nav a:nth-child(4) {
+  opacity         : 1;
+  transform       : none;
+  transition-delay: .15s;
+}
+
+/* ABOUT – navigator only (no layout changes elsewhere) */
+.about-me .header-icon {
+  z-index: 1000 !important;
+}
+
+/* make clickable */
+.about-me .header-icon .nav-toggle {
+  z-index: 1001 !important;
+}
+
+.about-me .header-icon .quick-nav[hidden] {
+  /* respect [hidden] */
+  display: none !important;
+}
+
+/* if your base styles disable clicks while closed, keep this tiny helper */
+.about-me .header-icon.is-open .quick-nav {
+  pointer-events: auto;
+}
+
+/* ================== ABOUT · Navigator, Spikey, Gear (scoped) ================== */
+
+/* 1) Navigator – keep clickable, don’t change placement/layout */
+.about-me .header-icon {
+  z-index: 1000 !important;
+}
+
+.about-me .header-icon .nav-toggle {
+  z-index: 1001 !important;
+}
+
+.about-me .header-icon .quick-nav[hidden] {
+  display: none !important;
+}
+
+/* 2) Spikey overlay – lock back to original Figma coordinates */
+.about-me .spikey {
+  position      : absolute !important;
+  top           : 0 !important;
+  left          : 136px !important;
+  width         : 301px !important;
+  height        : 378px !important;
+  z-index       : 60 !important;
+  pointer-events: none;
+}
+
+/* 3) Gear – spin around its center forever, without being “cover”-cropped */
+.about-me .gear {
+  /* keep your existing absolute top/left/size; just make sure it won’t clip the child */
+  overflow   : visible;
+  will-change: transform;
+}
+
+/* override ONLY the gear’s inner image so global .img doesn’t force object-fit:cover */
+.about-me .gear .img {
+  position        : absolute;
+  top             : 0;
+  left            : 0;
+  width           : 100% !important;
+  height          : 100% !important;
+  object-fit      : contain !important;
+  transform-origin: 50% 50%;
+  animation       : about-gear-spin 16s linear infinite;
+  will-change     : transform;
+}
+
+@keyframes about-gear-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* =========================
+   ABOUT · header stays visible + nav size = Home
+   (drop-in override – place at END of style.css)
+   ========================= */
+
+/* Your design canvas is centered at 1440px; pin icons relative to that */
+:root {
+  --about-canvas-w: 1440px;
+}
+
+/* Left logo (keeps original visual spot, stays on screen while scrolling) */
+.logo-link {
+  position: fixed !important;
+  top     : 21px !important;
+  /* same vertical as Home */
+  left    : calc(50vw - var(--about-canvas-w)/2 + 53px) !important;
+  z-index : 2000 !important;
+}
+
+/* Heart/navigator (fixed in the same spot as Home) */
+.about-me .header-icon {
+  position      : fixed !important;
+  top           : 26px !important;
+  left          : calc(50vw - var(--about-canvas-w)/2 + 1106px) !important;
+  width         : 298px !important;
+  height        : 141px !important;
+  z-index       : 2000 !important;
+  pointer-events: auto !important;
+  /* keep it clickable */
+}
+
+/* Keep the button’s hit area in place */
+.about-me .header-icon .nav-toggle {
+  position  : absolute !important;
+  top       : 24px !important;
+  left      : 203px !important;
+  width     : 95px !important;
+  height    : 95px !important;
+  padding   : 0;
+  border    : 0;
+  background: transparent;
+  cursor    : pointer;
+  z-index   : 2001;
+  /* above nearby art */
+}
+
+/* Same hover/rotate behavior you already have */
+.about-me .header-icon .nav-toggle .heart {
+  transform : rotate(var(--rot, 180deg));
+  transition: transform .26s cubic-bezier(.2, .7, .2, 1), filter .3s ease;
+}
+
+.about-me .header-icon.is-open .nav-toggle .heart {
+  --rot: 0deg;
+}
+
+/* Dropdown list positioning remains relative to the fixed header-icon */
+.about-me .header-icon .quick-nav {
+  position        : absolute;
+  top             : 140px;
+  right           : 0;
+  display         : flex;
+  flex-direction  : column;
+  gap             : 28px;
+  margin          : 0;
+  padding         : 0;
+  pointer-events  : none;
+  opacity         : 0;
+  transform       : translateY(6px);
+  transform-origin: top right;
+  transition      : opacity .18s cubic-bezier(.2, .7, .2, 1),
+    transform .18s cubic-bezier(.2, .7, .2, 1);
+  z-index: 2000;
+}
+
+.about-me .header-icon.is-open .quick-nav {
+  pointer-events: auto;
+  opacity       : 1;
+  transform     : translateY(0);
+}
+
+/* === Make About’s list size match Home’s ===
+   (use the smaller home values; adjust if your home page uses
+   slightly different numbers) */
+.about-me .header-icon .quick-nav a {
+  font-family    : "Space Mono", monospace;
+  font-weight    : 400;
+  /* match Home  : smaller cap vs. the oversized 6.5vw you had */
+  font-size      : clamp(28px, 4.5vw, 64px);
+  line-height    : 1.1;
+  letter-spacing : .02em;
+  color          : #fff;
+  text-decoration: none;
+  opacity        : 0;
+  transform      : translateY(6px);
+  transition     : color .18s ease,
+    opacity .16s cubic-bezier(.22, 1, .36, 1),
+    transform .16s cubic-bezier(.22, 1, .36, 1);
+}
+
+.about-me .header-icon .quick-nav a:hover {
+  color: #87DF2B;
+}
+
+.about-me .header-icon.is-open .quick-nav a:nth-child(1) {
+  opacity         : 1;
+  transform       : none;
+  transition-delay: .03s;
+}
+
+.about-me .header-icon.is-open .quick-nav a:nth-child(2) {
+  opacity         : 1;
+  transform       : none;
+  transition-delay: .07s;
+}
+
+.about-me .header-icon.is-open .quick-nav a:nth-child(3) {
+  opacity         : 1;
+  transform       : none;
+  transition-delay: .11s;
+}
+
+.about-me .header-icon.is-open .quick-nav a:nth-child(4) {
+  opacity         : 1;
+  transform       : none;
+  transition-delay: .15s;
+}
+
+/* ABOUT: quick-nav font size = same feel as Home */
+.about-me .header-icon .quick-nav a {
+  font-size     : clamp(28px, 4.8vw, 72px) !important;
+  line-height   : 1.1;
+  letter-spacing: .02em;
+}
+
+/* ABOUT: heart rotation – 90° when closed, 0° when open */
+.about-me .header-icon .nav-toggle .heart {
+  --rot           : 90deg;
+  /* closed state */
+  --ty            : 0;
+  --sc            : 1;
+  transform-origin: 50% 50%;
+  transform       : rotate(var(--rot)) translateY(var(--ty)) scale(var(--sc));
+  transition      : transform .26s cubic-bezier(.2, .7, .2, 1), filter .3s ease;
+  will-change     : transform;
+}
+
+.about-me .header-icon.is-open .nav-toggle .heart {
+  --rot: 0deg;
+  /* open state */
+}
+
+/* === ABOUT — Quick-nav type to match Figma (Space Mono 48 / 2%) === */
+.about-me .header-icon .quick-nav a {
+  font-family   : "Space Mono", monospace !important;
+  font-weight   : 400 !important;
+  font-size     : 48px !important;
+  letter-spacing: 0.02em !important;
+  /* 2% */
+  line-height   : 1.2 !important;
+  /* “Auto” feel */
+}
+
+/* === ABOUT — Heart: 90° closed -> 0° open === */
+/* Stop any earlier animations from overwriting transform */
+.about-me .header-icon .nav-toggle .heart {
+  animation       : none !important;
+  /* prevents logoFloat from stomping transform */
+  transform-origin: 50% 50%;
+  transform       : rotate(90deg) !important;
+  /* closed */
+  transition      : transform .26s cubic-bezier(.2, .7, .2, 1), filter .3s ease;
+}
+
+/* When the container gets .is-open (your JS toggles this), go to 0° */
+.about-me .header-icon.is-open .nav-toggle .heart {
+  transform: rotate(0deg) !important;
+}
+
+/* Optional: keep the same hover micro-motion */
+.about-me .header-icon .nav-toggle:hover .heart {
+  transform: rotate(90deg) translateY(-2px) scale(1.06) !important;
+  filter   : drop-shadow(0 0 12px #87DF2B);
+}
+
+.about-me .header-icon.is-open .nav-toggle:hover .heart {
+  transform: rotate(0deg) translateY(-2px) scale(1.06) !important;
+}
+
+.about-me .header-icon .nav-toggle:active .heart {
+  transform: rotate(90deg) scale(.94) !important;
+  filter   : none;
+}
+
+.about-me .header-icon.is-open .nav-toggle:active .heart {
+  transform: rotate(0deg) scale(.94) !important;
+}
+
+/* === ABOUT — Heart rotation: 180° closed → 0° open === */
+.about-me .header-icon .nav-toggle .heart {
+  animation       : none !important;
+  /* don't let any float animation rewrite transform */
+  transform-origin: 50% 50%;
+  transform       : rotate(180deg) !important;
+  /* closed */
+  transition      : transform .26s cubic-bezier(.2, .7, .2, 1), filter .3s ease;
+}
+
+.about-me .header-icon.is-open .nav-toggle .heart {
+  transform: rotate(0deg) !important;
+  /* open */
+}
+
+/* keep the hover/press micro-motion consistent in both states */
+.about-me .header-icon:not(.is-open) .nav-toggle:hover .heart {
+  transform: rotate(180deg) translateY(-2px) scale(1.06) !important;
+  filter   : drop-shadow(0 0 12px #87DF2B);
+}
+
+.about-me .header-icon.is-open .nav-toggle:hover .heart {
+  transform: rotate(0deg) translateY(-2px) scale(1.06) !important;
+  filter   : drop-shadow(0 0 12px #87DF2B);
+}
+
+.about-me .header-icon:not(.is-open) .nav-toggle:active .heart {
+  transform: rotate(180deg) scale(.94) !important;
+  filter   : none;
+}
+
+.about-me .header-icon.is-open .nav-toggle:active .heart {
+  transform: rotate(0deg) scale(.94) !important;
+  filter   : none;
+}
+
+/* ABOUT title: default green → white while hovered/animating */
+#aboutTitle {
+  color     : #87DF2B;
+  /* your green */
+  transition: color .2s ease;
+  /* smooth change */
+}
+
+#aboutTitle.is-hot {
+  color: #fff;
+  /* turn white on mouseenter */
+}
+
+
+@media (max-width: 768px) {
+  .about-me .div {
+    height  : 5504px;
+    position: absolute;
+    left    : -82px;
+
+  }
+
+  .logo-link {
+    left: 2% !important;
+  }
+
+  .about-me .header-icon {
+    left: 55% !important;
+  }
+
+  .about-me .hi-i-m-thanh-often {
+    left: 40% !important;
+  }
+
+  .about-me .text-wrapper-4 {
+    left: 39%;
+  }
+}

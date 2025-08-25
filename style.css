@@ -1,0 +1,1059 @@
+.main {
+  background-color: #000000;
+  display         : grid;
+  justify-items   : center;
+  align-items     : start;
+  width           : 100vw;
+}
+
+.main .div {
+  background-color: #000000;
+  overflow        : hidden;
+  width           : 1440px;
+  height          : 3315px;
+  position        : relative;
+}
+
+.main .text-wrapper {
+  position       : absolute;
+  width          : 277px;
+  top            : 45px;
+  left           : 226px;
+  font-family    : "Inter Tight", Helvetica;
+  font-weight    : 200;
+  font-style     : italic;
+  color          : #ffffff80;
+  font-size      : 24px;
+  text-align     : center;
+  letter-spacing : 0;
+  line-height    : normal;
+  text-decoration: underline;
+}
+
+.main .group {
+  position: absolute;
+  width   : 441px;
+  height  : 58px;
+  top     : 46px;
+  left    : 613px;
+}
+
+.main .creative-mind-based {
+  position      : absolute;
+  width         : 364px;
+  top           : 0;
+  left          : 75px;
+  font-family   : "Inter Tight", Helvetica;
+  font-weight   : 600;
+  color         : #ffffff;
+  font-size     : 29px;
+  letter-spacing: 0;
+  line-height   : normal;
+}
+
+.main .arrow {
+  position: absolute;
+  width   : 56px;
+  height  : 15px;
+  top     : 16px;
+  left    : 0;
+}
+
+.main .overlap {
+  position: absolute;
+  width   : 1507px;
+  height  : 2838px;
+  top     : 234px;
+  left    : -35px;
+}
+
+.main .overlap-group {
+  position: absolute;
+  width   : 1507px;
+  height  : 2838px;
+  top     : 0;
+  left    : 0;
+}
+
+.main .overlap-2 {
+  position: absolute;
+  width   : 1507px;
+  height  : 2313px;
+  top     : 0;
+  left    : 0;
+}
+
+.main .name {
+  position: absolute;
+  width   : 1503px;
+  height  : 288px;
+  top     : 463px;
+  left    : 4px;
+}
+
+.main .text-wrapper-2 {
+  width         : 100%;
+  top           : 22px;
+  left          : -4px;
+  font-family   : "Space Grotesk", Helvetica;
+  font-weight   : 700;
+  font-size     : 1082%;
+  letter-spacing: 3.74px;
+  white-space   : nowrap;
+  position      : absolute;
+  color         : #ffffff;
+  text-align    : center;
+  line-height   : normal;
+}
+
+.main .frame {
+  position: absolute;
+  width   : 1423px;
+  height  : 587px;
+  top     : 0;
+  left    : 44px;
+}
+
+.main .overlap-3 {
+  position: relative;
+  width   : 595px;
+  height  : 194px;
+  top     : -2px;
+  left    : 68px;
+}
+
+.main .element-DESIGN {
+  width   : 595px;
+  height  : 153px;
+  top     : 29px;
+  position: absolute;
+  left    : 0;
+}
+
+.main .overlap-group-wrapper {
+  position: relative;
+  width   : 436px;
+  height  : 89px;
+  top     : 32px;
+  left    : 81px;
+}
+
+.main .overlap-group-2 {
+  position: relative;
+  width   : 434px;
+  height  : 89px;
+}
+
+.main .rectangle {
+  position        : absolute;
+  width           : 418px;
+  height          : 89px;
+  top             : 0;
+  left            : 14px;
+  background-color: #d9d9d9;
+  border-radius   : 169px;
+}
+
+.main .text-wrapper-3 {
+  width         : 434px;
+  top           : 10px;
+  font-family   : var(--opening-icon-font-family);
+  font-weight   : var(--opening-icon-font-weight);
+  color         : #000000;
+  font-size     : var(--opening-icon-font-size);
+  text-align    : center;
+  letter-spacing: var(--opening-icon-letter-spacing);
+  line-height   : var(--opening-icon-line-height);
+  white-space   : nowrap;
+  position      : absolute;
+  left          : 0;
+  font-style    : var(--opening-icon-font-style);
+}
+
+.main .element-DESIGNER {
+  position: absolute;
+  width   : 452px;
+  height  : 194px;
+  top     : 0;
+  left    : 109px;
+}
+
+.main .div-wrapper {
+  position: relative;
+  width   : 421px;
+  height  : 114px;
+  top     : 51px;
+  left    : 13px;
+}
+
+.main .overlap-group-3 {
+  position     : relative;
+  width        : 419px;
+  height       : 114px;
+  border-radius: 169px;
+  border       : 10px solid;
+  border-color : #fffdfd;
+}
+
+.main .text-wrapper-4 {
+  position      : absolute;
+  width         : 361px;
+  top           : 13px;
+  left          : 19px;
+  font-family   : var(--opening-icon-font-family);
+  font-weight   : var(--opening-icon-font-weight);
+  color         : #ffffff;
+  font-size     : var(--opening-icon-font-size);
+  text-align    : center;
+  letter-spacing: var(--opening-icon-letter-spacing);
+  line-height   : var(--opening-icon-line-height);
+  white-space   : nowrap;
+  font-style    : var(--opening-icon-font-style);
+}
+
+.main .TANNA {
+  position: absolute;
+  width   : 285px;
+  height  : 149px;
+  top     : 20px;
+  left    : 90px;
+}
+
+.main .group-2 {
+  position: relative;
+  width   : 237px;
+  height  : 100px;
+  top     : 24px;
+  left    : 25px;
+}
+
+.main .overlap-group-4 {
+  position     : relative;
+  width        : 235px;
+  height       : 100px;
+  border-radius: 169px;
+  border       : 10px solid;
+  border-color : #fffdfd;
+}
+
+.main .text-wrapper-5 {
+  width         : 185px;
+  top           : 8px;
+  left          : 15px;
+  font-family   : var(--opening-icon-font-family);
+  font-weight   : var(--opening-icon-font-weight);
+  font-size     : var(--opening-icon-font-size);
+  letter-spacing: var(--opening-icon-letter-spacing);
+  position      : absolute;
+  color         : #ffffff;
+  text-align    : center;
+  line-height   : var(--opening-icon-line-height);
+  font-style    : var(--opening-icon-font-style);
+}
+
+.main .UI-UX {
+  position: absolute;
+  width   : 230px;
+  height  : 176px;
+  top     : 17px;
+  left    : 135px;
+  overflow: hidden;
+}
+
+.main .group-3 {
+  position: relative;
+  width   : 275px;
+  height  : 99px;
+  top     : 46px;
+  left    : -21px;
+}
+
+.main .overlap-group-5 {
+  position: relative;
+  width   : 273px;
+  height  : 99px;
+}
+
+.main .rectangle-2 {
+  position        : absolute;
+  width           : 212px;
+  height          : 99px;
+  top             : 0;
+  left            : 26px;
+  background-color: #d9d9d9;
+  border-radius   : 169px;
+}
+
+.main .text-wrapper-6 {
+  position      : absolute;
+  width         : 273px;
+  top           : 18px;
+  left          : 0;
+  font-family   : var(--opening-icon-font-family);
+  font-weight   : var(--opening-icon-font-weight);
+  color         : #000000;
+  font-size     : var(--opening-icon-font-size);
+  text-align    : center;
+  letter-spacing: var(--opening-icon-letter-spacing);
+  line-height   : var(--opening-icon-line-height);
+  font-style    : var(--opening-icon-font-style);
+}
+
+.main .star {
+  position: absolute;
+  width   : 166px;
+  height  : 129px;
+  top     : 29px;
+  left    : 52px;
+}
+
+.main .group-4 {
+  position: relative;
+  width   : 88px;
+  height  : 88px;
+  top     : 21px;
+  left    : 38px;
+}
+
+.main .overlap-group-6 {
+  position     : relative;
+  height       : 88px;
+  border-radius: 44px;
+}
+
+.main .img {
+  position: absolute;
+  width   : 47px;
+  height  : 43px;
+  top     : 20px;
+  left    : 20px;
+}
+
+.main .ellipse {
+  position     : absolute;
+  width        : 88px;
+  height       : 88px;
+  top          : 0;
+  left         : 0;
+  border-radius: 44px;
+  border       : 10px solid;
+  border-color : #ffffff;
+}
+
+.main .welcome-to-my {
+  position      : absolute;
+  width         : 712px;
+  top           : 1866px;
+  left          : 399px;
+  font-family   : var(--opening-icon-font-family);
+  font-weight   : var(--opening-icon-font-weight);
+  color         : transparent;
+  font-size     : var(--opening-icon-font-size);
+  text-align    : center;
+  letter-spacing: var(--opening-icon-letter-spacing);
+  line-height   : var(--opening-icon-line-height);
+  font-style    : var(--opening-icon-font-style);
+}
+
+.main .span {
+  color         : #ffffff;
+  letter-spacing: var(--opening-icon-letter-spacing);
+  font-family   : var(--opening-icon-font-family);
+  font-style    : var(--opening-icon-font-style);
+  font-weight   : var(--opening-icon-font-weight);
+  line-height   : var(--opening-icon-line-height);
+  font-size     : var(--opening-icon-font-size);
+}
+
+.main .text-wrapper-7 {
+  color         : #87df2b;
+  letter-spacing: var(--opening-icon-letter-spacing);
+  font-family   : var(--opening-icon-font-family);
+  font-style    : var(--opening-icon-font-style);
+  font-weight   : var(--opening-icon-font-weight);
+  line-height   : var(--opening-icon-line-height);
+  font-size     : var(--opening-icon-font-size);
+}
+
+.main .text-wrapper-8 {
+  position      : absolute;
+  width         : 712px;
+  top           : 1217px;
+  left          : 392px;
+  font-family   : var(--opening-icon-font-family);
+  font-weight   : var(--opening-icon-font-weight);
+  color         : #ffffff;
+  font-size     : var(--opening-icon-font-size);
+  text-align    : center;
+  letter-spacing: var(--opening-icon-letter-spacing);
+  line-height   : var(--opening-icon-line-height);
+  font-style    : var(--opening-icon-font-style);
+}
+
+.main .scroll {
+  position: absolute;
+  width   : 410px;
+  height  : 1564px;
+  top     : 749px;
+  left    : 0;
+}
+
+.main .embryo {
+  position    : absolute;
+  width       : 364px;
+  height      : 467px;
+  top         : 0;
+  left        : 46px;
+  aspect-ratio: 0.78;
+  object-fit  : cover;
+}
+
+.main .hand {
+  position    : absolute;
+  width       : 375px;
+  height      : 819px;
+  top         : 745px;
+  left        : 35px;
+  aspect-ratio: 0.78;
+  object-fit  : cover;
+}
+
+.main .ear {
+  position: absolute;
+  width   : 491px;
+  height  : 549px;
+  top     : 2289px;
+  left    : 984px;
+}
+
+.main .overlap-4 {
+  position           : relative;
+  width              : 391px;
+  height             : 502px;
+  top                : 24px;
+  left               : 50px;
+  background-image   : url(https://c.animaapp.com/i1xXtO29/img/ear-1.png);
+  background-size    : cover;
+  background-position: 50% 50%;
+}
+
+.main .text-wrapper-9 {
+  width         : 324px;
+  top           : 410px;
+  left          : 33px;
+  font-family   : var(--ICON-1-font-family);
+  font-weight   : var(--ICON-1-font-weight);
+  font-size     : var(--ICON-1-font-size);
+  letter-spacing: var(--ICON-1-letter-spacing);
+  position      : absolute;
+  color         : #ffffff;
+  text-align    : center;
+  line-height   : var(--ICON-1-line-height);
+  font-style    : var(--ICON-1-font-style);
+}
+
+.main .heart {
+  position: absolute;
+  width   : 437px;
+  height  : 486px;
+  top     : 2313px;
+  left    : 35px;
+}
+
+.main .overlap-5 {
+  position: relative;
+  width   : 421px;
+  height  : 441px;
+  top     : 44px;
+  left    : 8px;
+}
+
+.main .img-2 {
+  position    : absolute;
+  width       : 310px;
+  height      : 398px;
+  top         : 0;
+  left        : 55px;
+  aspect-ratio: 0.78;
+  object-fit  : cover;
+}
+
+.main .text-wrapper-10 {
+  position      : absolute;
+  width         : 421px;
+  top           : 364px;
+  left          : 0;
+  font-family   : var(--ICON-1-font-family);
+  font-weight   : var(--ICON-1-font-weight);
+  color         : #ffffff;
+  font-size     : var(--ICON-1-font-size);
+  text-align    : center;
+  letter-spacing: var(--ICON-1-letter-spacing);
+  line-height   : var(--ICON-1-line-height);
+  font-style    : var(--ICON-1-font-style);
+}
+
+.main .brain {
+  position: absolute;
+  width   : 447px;
+  height  : 446px;
+  top     : 2369px;
+  left    : 532px;
+}
+
+.main .overlap-6 {
+  position           : relative;
+  width              : 388px;
+  height             : 446px;
+  left               : 29px;
+  background-image   : url(https://c.animaapp.com/i1xXtO29/img/brain-1@2x.png);
+  background-size    : cover;
+  background-position: 50% 50%;
+}
+
+.main .text-wrapper-11 {
+  position      : absolute;
+  width         : 324px;
+  top           : 354px;
+  left          : 32px;
+  font-family   : var(--ICON-1-font-family);
+  font-weight   : var(--ICON-1-font-weight);
+  color         : #ffffff;
+  font-size     : var(--ICON-1-font-size);
+  text-align    : center;
+  letter-spacing: var(--ICON-1-letter-spacing);
+  line-height   : var(--ICON-1-line-height);
+  font-style    : var(--ICON-1-font-style);
+}
+
+.main .biocircuit {
+  position: absolute;
+  width   : 119px;
+  height  : 119px;
+  top     : 21px;
+  left    : 53px;
+}
+
+.main .header-icon {
+  position: absolute;
+  width   : 298px;
+  height  : 141px;
+  top     : 26px;
+  left    : 1106px;
+}
+
+.main .heart-2 {
+  position: absolute;
+  width   : 95px;
+  height  : 95px;
+  top     : 24px;
+  left    : 203px;
+}
+
+/* ==== Picture buttons (About / Gallery / Contact) ==== */
+.nav-card {
+  /* layout-safe, doesn't break your current grid */
+  display        : inline-flex;
+  flex-direction : column;
+  align-items    : center;
+  gap            : .6rem;
+  text-decoration: none;
+  color          : inherit;
+  cursor         : pointer;
+  position       : relative;
+  padding        : 6px 2px;
+  outline        : none;
+  /* tune per-card with CSS vars */
+  --accent       : #7CFF00;
+  /* neon green label on hover */
+  --hoverY       : 24px;
+  /* how far image slides down on hover */
+  --hoverScale   : 1.12;
+  /* how much bigger the image gets */
+
+  /* Cross-browser compatibility */
+  -webkit-transform: translateZ(0);
+  -moz-transform   : translateZ(0);
+  -ms-transform    : translateZ(0);
+  transform        : translateZ(0);
+
+  /* Ensure visibility on all devices */
+  z-index   : 10;
+  opacity   : 1;
+  visibility: visible;
+}
+
+.nav-card img {
+  transform-origin: center bottom;
+  transform       : translateY(0) scale(1);
+  transition      : transform .45s cubic-bezier(.2, .8, 0, 1),
+    filter .45s ease;
+  will-change: transform;
+
+  /* Cross-browser compatibility */
+  -webkit-transition: -webkit-transform .45s cubic-bezier(.2, .8, 0, 1),
+    -webkit-filter .45s ease;
+  -moz-transition: -moz-transform .45s cubic-bezier(.2, .8, 0, 1),
+    -moz-filter .45s ease;
+  -o-transition: -o-transform .45s cubic-bezier(.2, .8, 0, 1),
+    -o-filter .45s ease;
+}
+
+.nav-card .nav-label {
+  font-weight   : 900;
+  letter-spacing: .02em;
+  transition    : color .28s ease, text-shadow .28s ease, transform .45s cubic-bezier(.2, .8, 0, 1);
+  color         : #fff;
+
+  /* Cross-browser compatibility */
+  -webkit-transition: color .28s ease, -webkit-text-shadow .28s ease, -webkit-transform .45s cubic-bezier(.2, .8, 0, 1);
+  -moz-transition   : color .28s ease, -moz-text-shadow .28s ease, -moz-transform .45s cubic-bezier(.2, .8, 0, 1);
+  -o-transition     : color .28s ease, -o-text-shadow .28s ease, -o-transform .45s cubic-bezier(.2, .8, 0, 1);
+}
+
+/* Hover/focus state = your "bottom" look */
+.nav-card:hover img,
+.nav-card:focus-visible img {
+  transform: translateY(var(--hoverY)) scale(var(--hoverScale));
+  filter   : drop-shadow(0 12px 28px rgba(0, 0, 0, .55));
+
+  /* Cross-browser compatibility */
+  -webkit-transform: translateY(var(--hoverY)) scale(var(--hoverScale));
+  -moz-transform   : translateY(var(--hoverY)) scale(var(--hoverScale));
+  -ms-transform    : translateY(var(--hoverY)) scale(var(--hoverScale));
+  -o-transform     : translateY(var(--hoverY)) scale(var(--hoverScale));
+
+  -webkit-filter: drop-shadow(0 12px 28px rgba(0, 0, 0, .55));
+  -moz-filter   : drop-shadow(0 12px 28px rgba(0, 0, 0, .55));
+  -o-filter     : drop-shadow(0 12px 28px rgba(0, 0, 0, .55));
+}
+
+.nav-card:hover .nav-label,
+.nav-card:focus-visible .nav-label {
+  color      : var(--accent);
+  text-shadow: 0 0 14px color-mix(in oklab, var(--accent) 55%, transparent);
+  transform  : translateY(3px);
+
+  /* Cross-browser compatibility */
+  -webkit-text-shadow: 0 0 14px var(--accent);
+  -moz-text-shadow   : 0 0 14px var(--accent);
+  -o-text-shadow     : 0 0 14px var(--accent);
+
+  -webkit-transform: translateY(3px);
+  -moz-transform   : translateY(3px);
+  -ms-transform    : translateY(3px);
+  -o-transform     : translateY(3px);
+}
+
+/* Accessibility: visible keyboard ring */
+.nav-card:focus-visible {
+  outline       : 2px solid #fff;
+  outline-offset: 6px;
+  border-radius : 10px;
+}
+
+/* Optional per-card tuning (sizes differ slightly) */
+.nav-about {
+  --hoverY    : 28px;
+  --hoverScale: 1.13;
+}
+
+.nav-gallery {
+  --hoverY    : 26px;
+  --hoverScale: 1.12;
+}
+
+.nav-contact {
+  --hoverY    : 22px;
+  --hoverScale: 1.11;
+}
+
+/* Motion-safe fallback */
+@media (prefers-reduced-motion: reduce) {
+
+  .nav-card img,
+  .nav-card .nav-label {
+    transition        : none;
+    -webkit-transition: none;
+    -moz-transition   : none;
+    -o-transition     : none;
+  }
+}
+
+/* Make card area clickable without changing your layout */
+.nav-card {
+  display        : inline-flex;
+  flex-direction : column;
+  align-items    : center;
+  gap            : .6rem;
+  text-decoration: none;
+  color          : inherit;
+  cursor         : pointer;
+  --accent       : #7CFF00;
+  --hoverY       : 24px;
+  /* default slide */
+  --hoverScale   : 1.12;
+  /* default scale */
+}
+
+/* Ensure navigation buttons are visible on all devices */
+.ear,
+.heart,
+.brain {
+  /* Force visibility */
+  opacity   : 1 !important;
+  visibility: visible !important;
+  display   : block !important;
+
+  /* Ensure proper positioning */
+  position: absolute !important;
+  z-index : 100 !important;
+}
+
+/* Cross-browser compatible transforms */
+.ear .overlap-4,
+.heart .overlap-5,
+.brain .overlap-6 {
+  /* Ensure background images load properly */
+  background-repeat  : no-repeat;
+  background-size    : cover;
+  background-position: center;
+
+  /* Cross-browser compatibility */
+  -webkit-background-size: cover;
+  -moz-background-size   : cover;
+  -o-background-size     : cover;
+}
+
+/* Ensure text is visible on all devices */
+.text-wrapper-9,
+.text-wrapper-10,
+.text-wrapper-11 {
+  /* Force text visibility */
+  color     : #ffffff !important;
+  opacity   : 1 !important;
+  visibility: visible !important;
+
+  /* Ensure proper text rendering */
+  -webkit-font-smoothing : antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering         : optimizeLegibility;
+
+  /* Add transitions for hover effects */
+  transition        : color .28s ease, text-shadow .28s ease, transform .45s cubic-bezier(.2, .8, 0, 1);
+  -webkit-transition: color .28s ease, -webkit-text-shadow .28s ease, -webkit-transform .45s cubic-bezier(.2, .8, 0, 1);
+  -moz-transition   : color .28s ease, -moz-text-shadow .28s ease, -moz-transform .45s cubic-bezier(.2, .8, 0, 1);
+  -o-transition     : color .28s ease, -o-text-shadow .28s ease, -o-transform .45s cubic-bezier(.2, .8, 0, 1);
+}
+
+/* ===== SPECIFIC HOVER EFFECTS FOR EACH NAVIGATION BUTTON ===== */
+
+/* EAR (Contact) - Background image button */
+.ear .overlap-4 {
+  transition        : transform .45s cubic-bezier(.2, .8, 0, 1), filter .45s ease;
+  -webkit-transition: -webkit-transform .45s cubic-bezier(.2, .8, 0, 1), -webkit-filter .45s ease;
+  -moz-transition   : -moz-transform .45s cubic-bezier(.2, .8, 0, 1), -moz-filter .45s ease;
+  -o-transition     : -o-transform .45s cubic-bezier(.2, .8, 0, 1), -o-filter .45s ease;
+  transform-origin  : center bottom;
+  will-change       : transform;
+}
+
+.ear .nav-card:hover .overlap-4 {
+  transform        : translateY(22px) scale(1.11);
+  -webkit-transform: translateY(22px) scale(1.11);
+  -moz-transform   : translateY(22px) scale(1.11);
+  -ms-transform    : translateY(22px) scale(1.11);
+  -o-transform     : translateY(22px) scale(1.11);
+  filter           : drop-shadow(0 12px 28px rgba(0, 0, 0, .55));
+  -webkit-filter   : drop-shadow(0 12px 28px rgba(0, 0, 0, .55));
+  -moz-filter      : drop-shadow(0 12px 28px rgba(0, 0, 0, .55));
+  -o-filter        : drop-shadow(0 12px 28px rgba(0, 0, 0, .55));
+}
+
+.ear .nav-card:hover .text-wrapper-9 {
+  color              : #7CFF00;
+  text-shadow        : 0 0 14px #7CFF00;
+  -webkit-text-shadow: 0 0 14px #7CFF00;
+  -moz-text-shadow   : 0 0 14px #7CFF00;
+  -o-text-shadow     : 0 0 14px #7CFF00;
+  transform          : translateY(3px);
+  -webkit-transform  : translateY(3px);
+  -moz-transform     : translateY(3px);
+  -ms-transform      : translateY(3px);
+  -o-transform       : translateY(3px);
+}
+
+/* HEART (About) - Image button */
+.heart .img-2 {
+  transition        : transform .45s cubic-bezier(.2, .8, 0, 1), filter .45s ease;
+  -webkit-transition: -webkit-transform .45s cubic-bezier(.2, .8, 0, 1), -webkit-filter .45s ease;
+  -moz-transition   : -moz-transform .45s cubic-bezier(.2, .8, 0, 1), -moz-filter .45s ease;
+  -o-transition     : -o-transform .45s cubic-bezier(.2, .8, 0, 1), -o-filter .45s ease;
+  transform-origin  : center bottom;
+  will-change       : transform;
+}
+
+.heart .nav-card:hover .img-2 {
+  transform        : translateY(28px) scale(1.13);
+  -webkit-transform: translateY(28px) scale(1.13);
+  -moz-transform   : translateY(28px) scale(1.13);
+  -ms-transform    : translateY(28px) scale(1.13);
+  -o-transform     : translateY(28px) scale(1.13);
+  filter           : drop-shadow(0 12px 28px rgba(0, 0, 0, .55));
+  -webkit-filter   : drop-shadow(0 12px 28px rgba(0, 0, 0, .55));
+  -moz-filter      : drop-shadow(0 12px 28px rgba(0, 0, 0, .55));
+  -o-filter        : drop-shadow(0 12px 28px rgba(0, 0, 0, .55));
+}
+
+.heart .nav-card:hover .text-wrapper-10 {
+  color              : #7CFF00;
+  text-shadow        : 0 0 14px #7CFF00;
+  -webkit-text-shadow: 0 0 14px #7CFF00;
+  -moz-text-shadow   : 0 0 14px #7CFF00;
+  -o-text-shadow     : 0 0 14px #7CFF00;
+  transform          : translateY(3px);
+  -webkit-transform  : translateY(3px);
+  -moz-transform     : translateY(3px);
+  -ms-transform      : translateY(3px);
+  -o-transform       : translateY(3px);
+}
+
+/* BRAIN (Gallery) - Background image button */
+.brain .overlap-6 {
+  transition        : transform .45s cubic-bezier(.2, .8, 0, 1), filter .45s ease;
+  -webkit-transition: -webkit-transform .45s cubic-bezier(.2, .8, 0, 1), -webkit-filter .45s ease;
+  -moz-transition   : -moz-transform .45s cubic-bezier(.2, .8, 0, 1), -moz-filter .45s ease;
+  -o-transition     : -o-transform .45s cubic-bezier(.2, .8, 0, 1), -o-filter .45s ease;
+  transform-origin  : center bottom;
+  will-change       : transform;
+}
+
+.brain .nav-card:hover .overlap-6 {
+  transform        : translateY(26px) scale(1.12);
+  -webkit-transform: translateY(26px) scale(1.12);
+  -moz-transform   : translateY(26px) scale(1.12);
+  -ms-transform    : translateY(26px) scale(1.12);
+  -o-transform     : translateY(26px) scale(1.12);
+  filter           : drop-shadow(0 12px 28px rgba(0, 0, 0, .55));
+  -webkit-filter   : drop-shadow(0 12px 28px rgba(0, 0, 0, .55));
+  -moz-filter      : drop-shadow(0 12px 28px rgba(0, 0, 0, .55));
+  -o-filter        : drop-shadow(0 12px 28px rgba(0, 0, 0, .55));
+}
+
+.brain .nav-card:hover .text-wrapper-11 {
+  color              : #7CFF00;
+  text-shadow        : 0 0 14px #7CFF00;
+  -webkit-text-shadow: 0 0 14px #7CFF00;
+  -moz-text-shadow   : 0 0 14px #7CFF00;
+  -o-text-shadow     : 0 0 14px #7CFF00;
+  transform          : translateY(3px);
+  -webkit-transform  : translateY(3px);
+  -moz-transform     : translateY(3px);
+  -ms-transform      : translateY(3px);
+  -o-transform       : translateY(3px);
+}
+
+/* Focus states for accessibility */
+.ear .nav-card:focus-visible .overlap-4,
+.heart .nav-card:focus-visible .img-2,
+.brain .nav-card:focus-visible .overlap-6 {
+  transform        : translateY(24px) scale(1.12);
+  -webkit-transform: translateY(24px) scale(1.12);
+  -moz-transform   : translateY(24px) scale(1.12);
+  -ms-transform    : translateY(24px) scale(1.12);
+  -o-transform     : translateY(24px) scale(1.12);
+  filter           : drop-shadow(0 12px 28px rgba(0, 0, 0, .55));
+  -webkit-filter   : drop-shadow(0 12px 28px rgba(0, 0, 0, .55));
+  -moz-filter      : drop-shadow(0 12px 28px rgba(0, 0, 0, .55));
+  -o-filter        : drop-shadow(0 12px 28px rgba(0, 0, 0, .55));
+}
+
+.ear .nav-card:focus-visible .text-wrapper-9,
+.heart .nav-card:focus-visible .text-wrapper-10,
+.brain .nav-card:focus-visible .text-wrapper-11 {
+  color              : #7CFF00;
+  text-shadow        : 0 0 14px #7CFF00;
+  -webkit-text-shadow: 0 0 14px #7CFF00;
+  -moz-text-shadow   : 0 0 14px #7CFF00;
+  -o-text-shadow     : 0 0 14px #7CFF00;
+  transform          : translateY(3px);
+  -webkit-transform  : translateY(3px);
+  -moz-transform     : translateY(3px);
+  -ms-transform      : translateY(3px);
+  -o-transform       : translateY(3px);
+}
+
+/* Touch device compatibility - disable hover effects but keep focus */
+@media (hover: none) and (pointer: coarse) {
+
+  .ear .nav-card:hover .overlap-4,
+  .heart .nav-card:hover .img-2,
+  .brain .nav-card:hover .overlap-6 {
+    transform        : none;
+    -webkit-transform: none;
+    -moz-transform   : none;
+    -ms-transform    : none;
+    -o-transform     : none;
+    filter           : none;
+    -webkit-filter   : none;
+    -moz-filter      : none;
+    -o-filter        : none;
+  }
+
+  .ear .nav-card:hover .text-wrapper-9,
+  .heart .nav-card:hover .text-wrapper-10,
+  .brain .nav-card:hover .text-wrapper-11 {
+    color              : inherit;
+    text-shadow        : none;
+    -webkit-text-shadow: none;
+    -moz-text-shadow   : none;
+    -o-text-shadow     : none;
+    transform          : none;
+    -webkit-transform  : none;
+    -moz-transform     : none;
+    -ms-transform      : none;
+    -o-transform       : none;
+  }
+}
+
+/* Media queries for better cross-device compatibility */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+
+  /* WebKit-specific fixes */
+  .nav-card {
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective        : 1000px;
+  }
+}
+
+@media screen and (-moz-min-device-pixel-ratio: 0) {
+
+  /* Firefox-specific fixes */
+  .nav-card {
+    -moz-backface-visibility: hidden;
+    -moz-perspective        : 1000px;
+  }
+}
+
+/* Ensure animations work on touch devices */
+@media (hover: none) and (pointer: coarse) {
+
+  .nav-card:hover img,
+  .nav-card:hover .nav-label {
+    /* Disable hover effects on touch devices but keep focus effects */
+    transform  : none;
+    filter     : none;
+    color      : inherit;
+    text-shadow: none;
+  }
+
+  .nav-card:focus-visible img,
+  .nav-card:focus-visible .nav-label {
+    /* Keep focus effects for accessibility */
+    transform  : translateY(var(--hoverY)) scale(var(--hoverScale));
+    filter     : drop-shadow(0 12px 28px rgba(0, 0, 0, .55));
+    color      : var(--accent);
+    text-shadow: 0 0 14px var(--accent);
+  }
+}
+
+/* Home page header dropdown (match About) */
+.main .header-icon {
+  position: relative;
+  z-index : 60;
+}
+
+.main .header-icon .nav-toggle {
+  position  : absolute;
+  top       : 24px;
+  left      : 203px;
+  width     : 95px;
+  height    : 95px;
+  padding   : 0;
+  border    : 0;
+  background: transparent;
+  cursor    : pointer;
+}
+
+/* Rotate heart when menu is open (same feel as About) */
+.main .header-icon .nav-toggle .heart {
+  --rot           : 180deg;
+  width           : 100%;
+  height          : 100%;
+  transform-origin: 50% 50%;
+  transform       : rotate(var(--rot));
+  transition      : transform .26s cubic-bezier(.2, .7, .2, 1), filter .3s ease;
+}
+
+.main .header-icon.is-open .nav-toggle .heart {
+  --rot: 0deg;
+}
+
+/* Dropdown list */
+.main .header-icon .quick-nav {
+  position        : absolute;
+  top             : 140px;
+  right           : 0;
+  display         : flex;
+  flex-direction  : column;
+  gap             : 28px;
+  margin          : 0;
+  padding         : 0;
+  pointer-events  : none;
+  opacity         : 0;
+  transform       : translateY(6px);
+  transform-origin: top right;
+  transition      : opacity .18s cubic-bezier(.2, .7, .2, 1), transform .18s cubic-bezier(.2, .7, .2, 1);
+  z-index         : 70;
+}
+
+.main .header-icon.is-open .quick-nav {
+  pointer-events: auto;
+  opacity       : 1;
+  transform     : translateY(0);
+}
+
+.main .header-icon .quick-nav a {
+  color          : #fff;
+  text-decoration: none;
+  font-family    : "Space Mono", monospace;
+  font-weight    : 400;
+  font-size      : clamp(32px, 6.5vw, 90px);
+  line-height    : 1.1;
+  letter-spacing : .02em;
+  opacity        : 0;
+  transform      : translateY(6px);
+  transition     : color .18s ease, opacity .16s cubic-bezier(.22, 1, .36, 1), transform .16s cubic-bezier(.22, 1, .36, 1);
+}
+
+.main .header-icon .quick-nav a:hover {
+  color: #87DF2B;
+}
+
+.main .header-icon.is-open .quick-nav a:nth-child(1) {
+  opacity         : 1;
+  transform       : none;
+  transition-delay: .03s;
+}
+
+.main .header-icon.is-open .quick-nav a:nth-child(2) {
+  opacity         : 1;
+  transform       : none;
+  transition-delay: .07s;
+}
+
+.main .header-icon.is-open .quick-nav a:nth-child(3) {
+  opacity         : 1;
+  transform       : none;
+  transition-delay: .11s;
+}
+
+.main .header-icon.is-open .quick-nav a:nth-child(4) {
+  opacity         : 1;
+  transform       : none;
+  transition-delay: .15s;
+}
+
+.main .text-wrapper-2:hover {
+  color: #87DF2B;
+}

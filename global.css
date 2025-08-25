@@ -1,0 +1,28 @@
+/* Global reset + page background */
+:root{
+  --bg:#000;
+  --fg:#fff;
+  --accent:#87DF2B;
+  --page-gutter:clamp(16px,6vw,96px);
+}
+
+*,
+*::before,
+*::after{ box-sizing:border-box; }
+
+html,body{
+  height:100%;
+  margin:0;
+  background:var(--bg);
+  color:var(--fg);
+}
+
+img,svg,video{ max-width:100%; height:auto; display:block; }
+a{ color:inherit; text-decoration:none; }
+button{ font:inherit; }
+
+/* Utility */
+.visually-hidden{
+  position:absolute; inset:0 auto auto 0; width:1px; height:1px;
+  overflow:hidden; white-space:nowrap; clip-path:inset(100%); clip:rect(0 0 0 0);
+}

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/gallery/global.css" />
+    <link rel="stylesheet" href="/gallery/styleguide.css" />
+    <link rel="stylesheet" href="/gallery/style.css" />
+  </head>
+  <body>
+    <div class="work">
+      <div class="div">
+        <div class="overlap">
+          <img class="spikey" src="/img/gallery/spikey 2.png" />
+          <div class="text-wrapper">2023-2025</div>
+          <div class="text-wrapper-2">Selected work</div>
+          <div class="gallery">
+            <div class="overlap-group">
+              <img class="eyeball" src="/img/gallery/eyeball 2.png" />
+              <img class="img" src="/img/gallery/eyeball 4.png" />
+              <img class="eyeball-2" src="/img/gallery/eyeball 5.png" />
+              <img class="eyeball-3" src="/img/gallery/eyeball 9.png" />
+              <img class="eyeball-4" src="/img/gallery/eyeball 6.png" />
+              <img class="eyeball-5" src="/img/gallery/eyeball 7.png" />
+              <img class="eyeball-6" src="/img/gallery/eyeball 8.png" />
+              <img class="eyeball-7" src="/img/gallery/eyeball 3.png" />
+              <img class="brain" src="/img/gallery/brain 2.png" />
+              <div class="text-wrapper-3">GALLERY</div>
+            </div>
+          </div>
+         <div class="frame">
+  <div class="desktop-wrapper">
+    <div class="desktop"></div>
+
+    <!-- NEW: video, 674×432, centered, 12px from the top -->
+    <div class="gallery-video">
+      <video
+        class="gallery-video__media"
+        src="/img/gallery/A3_Group09_Desktop_showreel.mp4"
+        width="674"
+        height="432"
+        controls
+        playsinline
+        preload="metadata"
+      ></video>
+    </div>
+  </div>
+
+  <p class="p">
+    Combine cat energy and drag artistry in a high-octane music show featuring feline-inspired performers.
+    Aimed at ages 20–40, LGBTQ+ communities and anyone who loves music and drag, the event promotes
+    inclusivity while challenging stereotypes.
+  </p>
+  <div class="text-wrapper-4">Website design</div>
+</div>
+        
+          <div class="frame-2">
+  <div class="showcase-wrapper">
+    <div class="showcase"></div>
+
+    <!-- NEW: video, 674×432, centered, 12px from the top -->
+    <div class="gallery-video gallery-video--showcase">
+      <video
+        class="gallery-video__media"
+        width="674"
+        height="432"
+        controls
+        playsinline
+        preload="metadata"
+      >
+        <source src="/img/gallery/showcase.mp4" type="video/mp4" />
+        <!-- Update the src to your actual file path/name -->
+      </video>
+    </div>
+  </div>
+
+  <p class="text-wrapper-5">
+    I reimagine the Vietnamese anti-hero as a fragile, tragic guardian—flawed motives sublimated into
+    protecting homeland and unborn child—embodied in the humble Bà ba dress accented with Đông Hồ motifs.
+  </p>
+  <div class="text-wrapper-6">3D character design</div>
+</div>
+
+        </div>
+        <div class="overlap-2">
+          <img class="spikey-2" src="/img/gallery/spikey 3.png" />
+          <div class="frame-3">
+            <div class="screenshot-wrapper">
+              <img class="screenshot" src="/img/gallery/Screenshot 2025-08-16 at 16.47.41 1.png" />
+            </div>
+            <div class="text-wrapper-7">2D character design</div>
+            <p class="text-wrapper-8">
+              Once a humble scribe, Mu Zhen becomes a silent guardian inscribed with divine power, turning back floods
+              and driving spirits away. Every demon he seals etches a new symbol onto his mask, counting down to the
+              last mark that will decide the fate of both realms.
+            </p>
+          </div>
+          <div class="frame-4">
+            <img class="image" src="/img/gallery/image 2.png" />
+            <p class="text-wrapper-9">
+              From inside an asylum, a patient living with dissociation and psychosis narrates a path to
+              lobotomy—trading turmoil for a chilling calm—to question what a “cure” really costs.
+            </p>
+            <div class="text-wrapper-10">Visual design</div>
+          </div>
+          <footer class="footer">
+            <div class="emali-nalun">
+              Emali: nalun.0406@gmail.com<br /><br />Facebook: https://www.facebook.com/its.me.thanh.aka.reina<br /><br />Instagram:
+              https://www.instagram.com/_umissda_t_/
+            </div>
+            <img class="image-2" src="/img/gallery/image 3.png" />
+            <img class="embryo" src="/img/gallery/embryo 3.png" />
+          </footer>
+        </div>
+        <a href="/index.html" class="logo-link" aria-label="Home">
+  <img class="biocircuit" src="/img/gallery/image 3.png" alt="Logo" />
+</a>
+
+<div class="header-icon" id="headerNavExplore">
+  <button class="nav-toggle" aria-expanded="false" aria-controls="quickNavExplore" aria-label="Toggle menu">
+    <img class="heart" src="/img/gallery/heart.svg" alt="" />
+  </button>
+
+  <!-- Same links/order as other pages; hidden by default -->
+  <nav id="quickNavExplore" class="quick-nav" hidden>
+    <a href="/about/about.html">About</a>
+    <a href="/gallery/gallery.html" aria-current="page">Explore</a>
+    <a href="/contact/contact.html">Contact</a>
+    <a href="/index.html">Home</a>
+  </nav>
+</div>
+      </div>
+    </div>
+
+     <!-- Header toggle (heart 180° default → 0° when open) -->
+    <script>
+      (() => {
+        const wrap = document.getElementById('headerNavExplore');
+        if (!wrap) return;
+
+        const btn  = wrap.querySelector('.nav-toggle');
+        const menu = wrap.querySelector('.quick-nav');
+
+        const X_OFFSET = -110;  // left/right nudge of menu relative to heart
+        const Y_GAP    = 12;    // gap under the heart
+
+        const placeMenu = () => {
+          const b = btn.getBoundingClientRect();
+          let left = b.left + X_OFFSET;
+          let top  = b.bottom + Y_GAP;
+
+          const w = menu.offsetWidth  || 0;
+          const h = menu.offsetHeight || 0;
+          left = Math.max(8, Math.min(left, innerWidth  - w - 8));
+          top  = Math.max(8, Math.min(top,  innerHeight - h - 8));
+
+          menu.style.position = 'fixed';
+          menu.style.left = left + 'px';
+          menu.style.top  = top  + 'px';
+          menu.style.zIndex = 3000;
+        };
+
+        // replay the stagger each open
+        const playStagger = () => {
+          menu.querySelectorAll('a').forEach(el => {
+            el.classList.remove('animate-in');
+            void el.offsetWidth; // reflow to restart animation
+            el.classList.add('animate-in');
+          });
+        };
+
+        const open  = () => { wrap.classList.add('is-open');  btn.setAttribute('aria-expanded','true');  menu.hidden = false; placeMenu(); playStagger(); };
+        const close = () => { wrap.classList.remove('is-open'); btn.setAttribute('aria-expanded','false'); menu.hidden = true;  menu.querySelectorAll('a').forEach(el => el.classList.remove('animate-in')); };
+
+        btn.addEventListener('click', (e) => { e.stopPropagation(); wrap.classList.contains('is-open') ? close() : open(); });
+        document.addEventListener('click',      (e) => { if (!wrap.contains(e.target)) close(); });
+        document.addEventListener('keydown',    (e) => { if (e.key === 'Escape') close(); });
+        addEventListener('resize',              ()   => { if (!menu.hidden) placeMenu(); });
+        addEventListener('scroll',              ()   => { if (!menu.hidden) placeMenu(); }, { passive: true });
+
+        close(); // default hidden, heart at 180°
+      })();
+    </script>
+
+    <!-- Brain/title hover (20° tilt, title turns white) -->
+    <script>
+      (() => {
+        const frame = document.querySelector('.work .gallery');
+        const brain = document.querySelector('.work .brain');
+        const title = document.querySelector('.work .text-wrapper-3');
+        if (!frame || !brain) return;
+
+        const TARGET = '-30deg';
+
+        frame.addEventListener('mouseenter', () => {
+          brain.style.setProperty('--brain-rot', TARGET);
+          if (title) title.style.color = '#fff';
+        });
+
+        frame.addEventListener('mouseleave', () => {
+          brain.style.setProperty('--brain-rot', '0deg');
+          if (title) title.style.color = '';
+        });
+      })();
+    </script>
+
+    <!-- Eyeballs hover: move to exact Figma layout (preserves size/rotate) -->
+    <script>
+      (() => {
+        const frame = document.querySelector('.work .gallery');
+        const group = document.querySelector('.work .gallery .overlap-group');
+        if (!frame || !group) return;
+
+        // any image with "eyeball" in its class + the small square (.img)
+        const eyes = Array.from(group.querySelectorAll('img[class*="eyeball"], .img'));
+
+        // keep each element's original transform (scale/rotate)
+        eyes.forEach(el => {
+          const base = getComputedStyle(el).transform;
+          if (base && base !== 'none') el.style.setProperty('--orig', base);
+        });
+
+        // Targets measured from the Gallery frame (1440x1158) top-left
+        const TARGETS_FRAME = new Map([
+          ['.eyeball-7', { x:  31.03,  y:  88.77,  r: 125.82 }],
+          ['.eyeball',   { x: 1159.72, y:  76.85,  r:  32.66 }],
+          ['.eyeball-3', { x: 1051.00, y:  56.00,  r:  -6.44 }],
+          ['.img',       { x:  174.00, y: 444.00,  r:   1.84 }],
+          ['.eyeball-5', { x: 1220.45, y: 624.55,  r: -35.21 }],
+          ['.eyeball-2', { x:   82.00, y: 871.00,  r: -147.34 }],
+          ['.eyeball-4', { x:  592.00, y: 890.00,  r:  65.04 }],
+          ['.eyeball-6', { x:  985.91, y: 749.49,  r: -30.68 }],
+        ]);
+
+        const posInGroup = (el) => {
+          const a = el.getBoundingClientRect();
+          const b = group.getBoundingClientRect();
+          return { x: a.left - b.left, y: a.top - b.top };
+        };
+
+        // convert frame-based target → group-local by subtracting group's offset
+        const groupOffset = () => {
+          const gb = group.getBoundingClientRect();
+          const fb = frame.getBoundingClientRect();
+          return { x: gb.left - fb.left, y: gb.top - fb.top }; // ~174,198 typically
+        };
+
+        function moveToTargets() {
+          group.classList.add('is-animating');
+          const { x: gx, y: gy } = groupOffset();
+
+          eyes.forEach(el => {
+            let t;
+            for (const [sel, cfg] of TARGETS_FRAME) if (el.matches(sel)) { t = cfg; break; }
+            if (!t) { el.style.removeProperty('--move'); el.style.removeProperty('--spin'); return; }
+
+            const p = posInGroup(el);
+            const targetX = t.x - gx;
+            const targetY = t.y - gy;
+            const dx = targetX - p.x;
+            const dy = targetY - p.y;
+
+            el.style.setProperty('--move', `translate(${dx}px, ${dy}px)`);
+            el.style.setProperty('--spin', `rotate(${t.r}deg)`);
+          });
+        }
+
+        function resetAll() {
+          group.classList.remove('is-animating');
+          eyes.forEach(el => {
+            el.style.removeProperty('--move');
+            el.style.removeProperty('--spin');
+          });
+        }
+
+        frame.addEventListener('mouseenter', moveToTargets);
+        frame.addEventListener('mouseleave', resetAll);
+
+        const keepPlaced = () => {
+          if (group.classList.contains('is-animating')) moveToTargets();
+        };
+        addEventListener('resize', keepPlaced);
+        addEventListener('scroll', keepPlaced, { passive: true });
+      })();
+    </script>
+
+    <script>
+(() => {
+  // place media exactly 12px from the card top, regardless of wrapper offsets
+  const place = (cardSel, mediaSel) => {
+    const card  = document.querySelector(cardSel);
+    const media = card ? card.querySelector(mediaSel) : null;
+    if (!card || !media) return;
+
+    // compute wrapper→card offset to correct the top position
+    const cardTop  = card.getBoundingClientRect().top + window.scrollY;
+    const baseTop  = media.offsetParent.getBoundingClientRect().top + window.scrollY;
+    const desired  = 12;                        // Figma: 12px from card top
+    const topPx    = desired - (baseTop - cardTop);
+
+    media.style.top = topPx + 'px';
+  };
+
+  const placeAll = () => {
+    place('.work .frame',   '.gallery-video');            // left card
+    place('.work .frame-2', '.gallery-video--showcase');  // right card
+  };
+
+  // initial + on resize (in case fonts/layout shift)
+  window.addEventListener('load',   placeAll);
+  window.addEventListener('resize', placeAll);
+  // if the page scrolls before fonts settle, keep them pinned
+  document.addEventListener('readystatechange', placeAll);
+})();
+</script>
+
+
+
+  </body>
+</html>

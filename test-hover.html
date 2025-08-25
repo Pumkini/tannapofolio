@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Effects Test</title>
+    <style>
+        body {
+            background: #000;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        
+        .test-container {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            align-items: flex-start;
+            margin-top: 50px;
+        }
+        
+        .test-button {
+            width: 200px;
+            height: 200px;
+            background: #333;
+            border: 2px solid #666;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .test-button:hover {
+            background: #555;
+            border-color: #7CFF00;
+            transform: translateY(-10px);
+        }
+        
+        .test-button .icon {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        
+        .test-button .label {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        .instructions {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #7CFF00;
+        }
+    </style>
+</head>
+<body>
+    <div class="instructions">
+        <h1>Hover Effects Test</h1>
+        <p>Hover over these test buttons to verify hover effects are working on your device</p>
+        <p>If these work, your navigation buttons should also work</p>
+    </div>
+    
+    <div class="test-container">
+        <a href="#" class="test-button">
+            <div class="icon">👂</div>
+            <div class="label">EAR</div>
+        </a>
+        
+        <a href="#" class="test-button">
+            <div class="icon">❤️</div>
+            <div class="label">HEART</div>
+        </a>
+        
+        <a href="#" class="test-button">
+            <div class="icon">🧠</div>
+            <div class="label">BRAIN</div>
+        </a>
+    </div>
+    
+    <div class="instructions" style="margin-top: 60px;">
+        <h2>If hover effects work above:</h2>
+        <p>✅ Your device supports hover effects</p>
+        <p>✅ CSS transitions are working</p>
+        <p>✅ Navigation buttons should work on your main page</p>
+        
+        <h2>If hover effects don't work above:</h2>
+        <p>❌ Your device doesn't support hover (touch device)</p>
+        <p>❌ Focus effects will still work (use Tab key)</p>
+        <p>❌ This is normal for mobile/tablet devices</p>
+    </div>
+</body>
+</html>
+

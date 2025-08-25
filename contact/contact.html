@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="contact">
+      <div class="div">
+        <!-- AFTER -->
+<a href="./index.html" class="logo-link" aria-label="Home">
+  <img class="biocircuit" src="/img/contact/Group 7.svg" alt="Logo" />
+</a>
+
+<div class="header-icon" id="headerNav">
+  <button class="nav-toggle" aria-expanded="false" aria-controls="quickNav" aria-label="Toggle menu">
+    <img class="heart" src="/img/contact/Heart.svg" alt="" />
+  </button>
+
+  <!-- Hidden by default; shows only when user clicks -->
+  <nav id="quickNav" class="quick-nav" hidden>
+    <a href="/about/about.html">About</a>
+    <a href="/gallery/gallery.html">Explore</a>
+    <a href="/contact.html" aria-current="page">Contact</a>
+    <a href="/index.html">Home</a>
+  </nav>
+</div>
+
+
+        <div class="overlap">
+          <img class="element" src="/img/contact/930b30fb-de9d-4cf2-9a5d-41d46056f3f5 1.png" />
+          <div class="overlap-group">
+            <a class="text-wrapper"
+             href="https://www.facebook.com/its.me.thanh.aka.reina" target="_blank" rel="noopener">
+            Facebook: https://www.facebook.com/its.me.thanh.aka.reina
+            </a>
+            <a class="text-wrapper-2" href="mailto:nalun.0406@gmail.com">
+                 Email: nalun.0406@gmail.com
+            </a>
+            <img class="hand" src="/img/contact/hand 2.png" />
+            <img class="chatgpt-image-aug" src="/img/contact/ChatGPT Image Aug 14, 2025, 06_21_04 PM 1.png" />
+          </div>
+        </div>
+        <img class="umissda-t-qr" src="/img/contact/_umissda_t__qr (1) 1.png" />
+        <a class="text-wrapper-3"
+            href="https://www.instagram.com/_umissda_t_/" target="_blank" rel="noopener">
+            Instagram: https://www.instagram.com/_umissda_t_/
+        </a>
+      </div>
+    </div>
+
+<script>
+(() => {
+  const wrap = document.getElementById('headerNav');
+  if (!wrap) return;
+
+  const btn  = wrap.querySelector('.nav-toggle');
+  const menu = wrap.querySelector('.quick-nav');
+
+  // Tweak here if you want more/less shift
+  const X_OFFSET = -110;   // negative = move list left from the heart
+  const Y_GAP    = 12;    // gap under the heart
+
+  const placeMenu = () => {
+    const b = btn.getBoundingClientRect();
+
+    // place just under the heart, then nudge left
+    let left = b.left + X_OFFSET;
+    let top  = b.bottom + Y_GAP;
+
+    // keep fully on screen (8px margin)
+    const w = menu.offsetWidth || 0;
+    const h = menu.offsetHeight || 0;
+    left = Math.max(8, Math.min(left, innerWidth  - w - 8));
+    top  = Math.max(8, Math.min(top,  innerHeight - h - 8));
+
+    menu.style.position = 'fixed';
+    menu.style.left = left + 'px';
+    menu.style.top  = top  + 'px';
+    menu.style.zIndex = 3000;
+  };
+
+  const playStagger = () => {
+    menu.querySelectorAll('a').forEach(el => {
+      el.classList.remove('animate-in'); void el.offsetWidth; el.classList.add('animate-in');
+    });
+  };
+
+  const open  = () => { wrap.classList.add('is-open');  btn.setAttribute('aria-expanded','true');  menu.hidden = false; placeMenu(); playStagger(); };
+  const close = () => { wrap.classList.remove('is-open'); btn.setAttribute('aria-expanded','false'); menu.hidden = true;  menu.querySelectorAll('a').forEach(el=>el.classList.remove('animate-in')); };
+
+  btn.addEventListener('click', (e) => { e.stopPropagation(); wrap.classList.contains('is-open') ? close() : open(); });
+  document.addEventListener('click', (e) => { if (!wrap.contains(e.target)) close(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+
+  addEventListener('resize', () => { if (!menu.hidden) placeMenu(); });
+  addEventListener('scroll',  () => { if (!menu.hidden) placeMenu(); }, { passive: true });
+
+  close(); // hidden by default
+})();
+</script>
+
+
+
+  </body>
+</html>

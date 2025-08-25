@@ -1,0 +1,631 @@
+.contact {
+  background-color: #000000;
+  display         : grid;
+  justify-items   : center;
+  align-items     : start;
+  width           : 100vw;
+}
+
+.contact .div {
+  background-color: #000000;
+  width           : 1440px;
+  height          : 1498px;
+  position        : relative;
+}
+
+.contact .biocircuit {
+  position: absolute;
+  width   : 119px;
+  height  : 119px;
+  top     : 21px;
+  left    : 53px;
+}
+
+.contact .header-icon {
+  position: absolute;
+  width   : 298px;
+  height  : 141px;
+  top     : 26px;
+  left    : 1106px;
+}
+
+.contact .heart {
+  position: absolute;
+  width   : 95px;
+  height  : 95px;
+  top     : 24px;
+  left    : 203px;
+}
+
+.contact .overlap {
+  height  : 823px;
+  top     : 675px;
+  position: absolute;
+  width   : 1440px;
+  left    : 0;
+}
+
+.contact .element {
+  position    : absolute;
+  width       : 272px;
+  height      : 272px;
+  top         : 0;
+  left        : 1090px;
+  aspect-ratio: 1;
+  object-fit  : cover;
+}
+
+.contact .overlap-group {
+  height  : 705px;
+  top     : 118px;
+  position: absolute;
+  width   : 1440px;
+  left    : 0;
+}
+
+.contact .text-wrapper {
+  position      : absolute;
+  width         : 757px;
+  top           : 0;
+  left          : 235px;
+  font-family   : var(--paragraph-font-family);
+  font-weight   : var(--paragraph-font-weight);
+  color         : #ffffff;
+  font-size     : var(--paragraph-font-size);
+  letter-spacing: var(--paragraph-letter-spacing);
+  line-height   : var(--paragraph-line-height);
+  font-style    : var(--paragraph-font-style);
+}
+
+.contact .text-wrapper-2 {
+  position      : absolute;
+  width         : 411px;
+  top           : 383px;
+  left          : 515px;
+  font-family   : var(--paragraph-font-family);
+  font-weight   : var(--paragraph-font-weight);
+  color         : #ffffff;
+  font-size     : var(--paragraph-font-size);
+  letter-spacing: var(--paragraph-letter-spacing);
+  line-height   : var(--paragraph-line-height);
+  font-style    : var(--paragraph-font-style);
+}
+
+.contact .hand {
+  position    : absolute;
+  width       : 582px;
+  height      : 305px;
+  top         : 400px;
+  left        : 858px;
+  aspect-ratio: 1.53;
+}
+
+.contact .chatgpt-image-aug {
+  position    : absolute;
+  width       : 567px;
+  height      : 665px;
+  top         : 8px;
+  left        : 0;
+  aspect-ratio: 0.79;
+}
+
+.contact .umissda-t-qr {
+  position    : absolute;
+  width       : 275px;
+  height      : 316px;
+  top         : 270px;
+  left        : 97px;
+  aspect-ratio: 0.87;
+  object-fit  : cover;
+}
+
+.contact .text-wrapper-3 {
+  position      : absolute;
+  width         : 757px;
+  top           : 409px;
+  left          : 498px;
+  font-family   : var(--paragraph-font-family);
+  font-weight   : var(--paragraph-font-weight);
+  color         : #ffffff;
+  font-size     : var(--paragraph-font-size);
+  letter-spacing: var(--paragraph-letter-spacing);
+  line-height   : var(--paragraph-line-height);
+  font-style    : var(--paragraph-font-style);
+}
+
+/* === ABOUT — Header parity with Home (final overrides) === */
+/* Keep the header fixed in the same visual spots as Home (1440px canvas) */
+:root {
+  --about-canvas-w: 1440px;
+}
+
+.logo-link {
+  position: fixed !important;
+  top     : 21px !important;
+  left    : calc(50vw - var(--about-canvas-w)/2 + 53px) !important;
+  z-index : 2000 !important;
+}
+
+/* Heart / quick-nav wrapper fixed to the right */
+.about-me .header-icon {
+  position      : fixed !important;
+  top           : 26px !important;
+  left          : calc(50vw - var(--about-canvas-w)/2 + 1106px) !important;
+  width         : 298px !important;
+  height        : 141px !important;
+  z-index       : 2000 !important;
+  pointer-events: auto !important;
+}
+
+.about-me .header-icon .nav-toggle {
+  position: absolute !important;
+  top     : 24px !important;
+  left    : 203px !important;
+  width   : 95px !important;
+  height  : 95px !important;
+  z-index : 2001;
+}
+
+/* Heart rotation: 180° (closed) → 0° (open) and keep hover micro-motion */
+.about-me .header-icon .nav-toggle .heart {
+  transform-origin: 50% 50%;
+  transform       : rotate(180deg) !important;
+  transition      : transform .26s cubic-bezier(.2, .7, .2, 1), filter .3s ease;
+}
+
+.about-me .header-icon.is-open .nav-toggle .heart {
+  transform: rotate(0deg) !important;
+}
+
+.about-me .header-icon:not(.is-open) .nav-toggle:hover .heart {
+  transform: rotate(180deg) translateY(-2px) scale(1.06) !important;
+  filter   : drop-shadow(0 0 12px #87DF2B);
+}
+
+.about-me .header-icon.is-open .nav-toggle:hover .heart {
+  transform: rotate(0deg) translateY(-2px) scale(1.06) !important;
+}
+
+/* Quick-nav typography = your Home look (Space Mono 48 / 2%) */
+.about-me .header-icon .quick-nav a {
+  font-family   : "Space Mono", monospace !important;
+  font-weight   : 400 !important;
+  font-size     : 48px !important;
+  letter-spacing: 0.02em !important;
+  line-height   : 1.2 !important;
+}
+
+/* === CONTACT — Header parity & behavior (non-breaking overrides) === */
+:root {
+  --canvas-w: 1440px;
+}
+
+/* Fix the logo to the viewport like on your other page */
+.logo-link {
+  position: fixed !important;
+  top     : 21px !important;
+  left    : calc(50vw - var(--canvas-w)/2 + 53px) !important;
+  z-index : 2000 !important;
+}
+
+/* Fix the heart wrapper to the right; keep your original sizes/offsets */
+.contact .header-icon {
+  position      : fixed !important;
+  top           : 26px !important;
+  left          : calc(50vw - var(--canvas-w)/2 + 1106px) !important;
+  width         : 298px !important;
+  height        : 141px !important;
+  z-index       : 2000 !important;
+  pointer-events: auto !important;
+}
+
+.contact .header-icon .nav-toggle {
+  position: absolute !important;
+  top     : 24px !important;
+  left    : 203px !important;
+  width   : 95px !important;
+  height  : 95px !important;
+}
+
+/* Heart: 180° when closed → 0° when open */
+.contact .header-icon .heart {
+  transform-origin: 50% 50%;
+  transform       : rotate(180deg);
+  transition      : transform .26s cubic-bezier(.2, .7, .2, 1), filter .3s ease;
+}
+
+.contact .header-icon.is-open .heart {
+  transform: rotate(0deg);
+}
+
+.contact .header-icon .nav-toggle:hover .heart {
+  transform: rotate(180deg) translateY(-2px) scale(1.06);
+  filter   : drop-shadow(0 0 12px #87DF2B);
+}
+
+.contact .header-icon.is-open .nav-toggle:hover .heart {
+  transform: rotate(0deg) translateY(-2px) scale(1.06);
+}
+
+/* The dropdown nav (hidden by default; shown when .is-open) */
+.contact .quick-nav {
+  position       : absolute;
+  top            : 0;
+  left           : 0;
+  display        : grid;
+  gap            : 8px;
+  padding        : 16px 20px;
+  background     : rgba(0, 0, 0, .8);
+  border         : 1px solid rgba(255, 255, 255, .2);
+  border-radius  : 14px;
+  transform      : translate(-10px, 110px);
+  backdrop-filter: blur(6px);
+}
+
+.contact .quick-nav a {
+  font-family    : "Space Mono", monospace;
+  font-size      : 48px;
+  letter-spacing : 0.02em;
+  line-height    : 1.2;
+  color          : #fff;
+  text-decoration: none;
+  white-space    : nowrap;
+}
+
+.contact .quick-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Make the long URLs wrap nicely; keep your current fonts */
+.contact a {
+  color: inherit;
+}
+
+.contact .text-wrapper,
+.contact .text-wrapper-2,
+.contact .text-wrapper-3 {
+  overflow-wrap: anywhere;
+}
+
+/* Only affects the header quick menu placement */
+.about-me .quick-nav,
+.contact .quick-nav {
+  position : fixed !important;
+  /* so JS can set left/top reliably */
+  transform: none !important;
+  /* neutralize any previous translate */
+  z-index  : 3000 !important;
+}
+
+/* === Quick-nav open style: pure list under the heart (no card) === */
+.about-me .quick-nav,
+.contact .quick-nav {
+  position  : fixed !important;
+  /* JS sets left/top */
+  transform : none !important;
+  /* kill any translate */
+  background: transparent !important;
+  border    : 0 !important;
+  box-shadow: none !important;
+  padding   : 0 !important;
+  display   : grid !important;
+  gap       : 40px !important;
+  /* generous spacing like your mock */
+  z-index   : 3000 !important;
+}
+
+/* Big, clean links */
+.about-me .quick-nav a,
+.contact .quick-nav a {
+  display        : block;
+  font-family    : "Space Mono", monospace;
+  font-weight    : 400;
+  font-size      : clamp(28px, 4vw, 48px);
+  letter-spacing : 0.02em;
+  line-height    : 1.2;
+  color          : #fff;
+  text-decoration: none;
+}
+
+/* Heart orientation to match your screenshot:
+   rotates upside-down WHEN OPEN, normal WHEN CLOSED */
+.about-me .header-icon .heart,
+.contact .header-icon .heart {
+  transform-origin: 50% 50%;
+  transform       : rotate(0deg) !important;
+  /* closed */
+  transition      : transform .26s cubic-bezier(.2, .7, .2, 1);
+}
+
+.about-me .header-icon.is-open .heart,
+.contact .header-icon.is-open .heart {
+  transform: rotate(180deg) !important;
+  /* open */
+}
+
+/* === Header: lock positions and pure list under heart === */
+:root {
+  --canvas-w: 1440px;
+}
+
+/* keep logo fixed like your other page (optional; remove if you prefer absolute) */
+.logo-link {
+  position: fixed !important;
+  top     : 21px !important;
+  left    : calc(50vw - var(--canvas-w)/2 + 53px) !important;
+  z-index : 2000 !important;
+}
+
+.contact .header-icon {
+  position: fixed !important;
+  /* anchor to viewport */
+  top     : 26px !important;
+  left    : calc(50vw - var(--canvas-w)/2 + 1106px) !important;
+  width   : 298px !important;
+  height  : 141px !important;
+  z-index : 2000 !important;
+}
+
+/* clickable heart hit-area exactly where your old heart sat */
+.contact .header-icon .nav-toggle {
+  position  : absolute;
+  top       : 24px;
+  left      : 203px;
+  width     : 95px;
+  height    : 95px;
+  background: none;
+  border    : 0;
+  padding   : 0;
+  cursor    : pointer;
+}
+
+/* heart orientation: 0° closed → 180° open (matches your reference) */
+.contact .header-icon .heart {
+  width           : 95px;
+  height          : 95px;
+  transform-origin: 50% 50%;
+  transform       : rotate(0deg);
+  transition      : transform .26s cubic-bezier(.2, .7, .2, 1);
+}
+
+.contact .header-icon.is-open .heart {
+  transform: rotate(180deg);
+}
+
+/* the simple list (no card) — drops under the heart */
+.contact .quick-nav {
+  position  : absolute;
+  /* relative to .header-icon */
+  left      : 203px;
+  /* aligned with heart's left edge */
+  top       : calc(24px + 95px + 12px);
+  /* below the heart with 12px gap */
+  display   : grid;
+  gap       : 40px;
+  background: transparent;
+  padding   : 0;
+  z-index   : 3000;
+}
+
+.contact .quick-nav[hidden] {
+  display: none !important;
+}
+
+/* truly hidden */
+
+.contact .quick-nav a {
+  font-family    : "Space Mono", monospace;
+  font-size      : clamp(28px, 4vw, 48px);
+  letter-spacing : 0.02em;
+  line-height    : 1.2;
+  color          : #fff;
+  text-decoration: none;
+}
+
+/* Fix heart offset: make the <img.heart> fill the button hit-area */
+.contact .header-icon .nav-toggle {
+  position  : absolute;
+  top       : 24px;
+  left      : 203px;
+  width     : 95px;
+  height    : 95px;
+  background: none;
+  border    : 0;
+  padding   : 0;
+  cursor    : pointer;
+}
+
+.contact .header-icon .nav-toggle .heart {
+  position: absolute !important;
+  inset   : 0 !important;
+  /* top  :0; right:0; bottom:0; left:0 */
+  width   : 100% !important;
+  height  : 100% !important;
+}
+
+/* Menu: simple list, dropped under the heart; hidden by default */
+.contact .quick-nav[hidden] {
+  display: none !important;
+}
+
+.contact .quick-nav {
+  position  : fixed !important;
+  /* the JS sets left/top */
+  background: transparent !important;
+  border    : 0 !important;
+  box-shadow: none !important;
+  padding   : 0 !important;
+  display   : grid !important;
+  gap       : 40px !important;
+  z-index   : 3000 !important;
+}
+
+/* Heart rotation: closed = 0°, open = 180° (matches your ref) */
+.contact .header-icon .heart {
+  transform-origin: 50% 50%;
+  transform       : rotate(0deg) !important;
+  /* closed */
+  transition      : transform .26s cubic-bezier(.2, .7, .2, 1);
+}
+
+.contact .header-icon.is-open .heart {
+  transform: rotate(180deg) !important;
+  /* open */
+}
+
+/* === Header quick-nav: staggered slide-in like About page === */
+@keyframes quicknav-in {
+  from {
+    opacity       : 0;
+    transform     : translateY(-12px);
+    letter-spacing: 0.08em;
+    filter        : blur(3px);
+  }
+
+  to {
+    opacity       : 1;
+    transform     : translateY(0);
+    letter-spacing: 0.02em;
+    filter        : blur(0);
+  }
+}
+
+/* Base state: hidden until animated in */
+.contact .quick-nav a,
+.about-me .quick-nav a {
+  opacity        : 0;
+  transform      : translateY(-8px);
+  will-change    : transform, opacity, letter-spacing, filter;
+  text-decoration: none;
+}
+
+/* When the menu is open, items with .animate-in will play the keyframe */
+.contact .header-icon.is-open .quick-nav a.animate-in,
+.about-me .header-icon.is-open .quick-nav a.animate-in {
+  animation: quicknav-in .45s cubic-bezier(.22, .75, .25, 1) forwards;
+}
+
+/* Nice stagger */
+.contact .header-icon.is-open .quick-nav a.animate-in:nth-child(1),
+.about-me .header-icon.is-open .quick-nav a.animate-in:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.contact .header-icon.is-open .quick-nav a.animate-in:nth-child(2),
+.about-me .header-icon.is-open .quick-nav a.animate-in:nth-child(2) {
+  animation-delay: .06s;
+}
+
+.contact .header-icon.is-open .quick-nav a.animate-in:nth-child(3),
+.about-me .header-icon.is-open .quick-nav a.animate-in:nth-child(3) {
+  animation-delay: .12s;
+}
+
+.contact .header-icon.is-open .quick-nav a.animate-in:nth-child(4),
+.about-me .header-icon.is-open .quick-nav a.animate-in:nth-child(4) {
+  animation-delay: .18s;
+}
+
+/* Hover micro-motion (doesn't affect layout) */
+.contact .quick-nav a:hover,
+.about-me .quick-nav a:hover {
+  transform: translateX(4px);
+  filter   : drop-shadow(0 0 6px #87DF2B);
+}
+
+/* === Quick-nav hover effect: turn green on mouse enter === */
+:root {
+  --accent-green: #87DF2B;
+}
+
+/* same as the heart */
+
+.about-me .quick-nav a,
+.contact .quick-nav a {
+  color     : #fff;
+  transition: color .2s ease, transform .2s ease, filter .2s ease;
+}
+
+/* hover + keyboard focus */
+.about-me .quick-nav a:hover,
+.about-me .quick-nav a:focus-visible,
+.contact .quick-nav a:hover,
+.contact .quick-nav a:focus-visible {
+  color    : var(--accent-green);
+  transform: translateX(4px);
+  /* keep your micro-motion */
+  filter   : drop-shadow(0 0 6px var(--accent-green));
+}
+
+/* === Quick-nav: match Figma (Space Mono 48 / 2%) + no underline on hover === */
+.about-me .quick-nav a,
+.contact .quick-nav a {
+  display        : block;
+  font-family    : "Space Mono", monospace !important;
+  font-weight    : 400 !important;
+  /* Regular */
+  font-size      : 48px !important;
+  /* Figma       : 48 */
+  letter-spacing : 0.02em !important;
+  /* Figma       : 2% */
+  line-height    : 1.2 !important;
+  /* Figma       : Auto */
+  color          : #fff;
+  text-decoration: none !important;
+  /* kill default underline */
+  transition     : color .2s ease, transform .2s ease, filter .2s ease;
+}
+
+.about-me .quick-nav a:hover,
+.about-me .quick-nav a:focus-visible,
+.contact .quick-nav a:hover,
+.contact .quick-nav a:focus-visible {
+  color          : #87DF2B;
+  /* same green as heart */
+  text-decoration: none !important;
+  /* ensure no underline on hover */
+  transform      : translateX(4px);
+  filter         : drop-shadow(0 0 6px #87DF2B);
+  outline        : none;
+  /* prevent default focus underline */
+}
+
+/* Heart: 180° by default (closed) → 0° when open */
+.about-me .header-icon .heart,
+.contact .header-icon .heart {
+  transform-origin: 50% 50%;
+  transform       : rotate(180deg) !important;
+  transition      : transform .26s cubic-bezier(.2, .7, .2, 1);
+}
+
+.about-me .header-icon.is-open .heart,
+.contact .header-icon.is-open .heart {
+  transform: rotate(0deg) !important;
+}
+
+
+@media (max-width: 768px) {
+  .contact .div {
+    height: 5504px;
+  }
+
+  .logo-link {
+    left: 2% !important;
+  }
+
+  .contact .header-icon {
+    left: 70% !important;
+  }
+
+  .contact .overlap-group {
+    top: 90%;
+  }
+
+  .contact .element {
+    top: 44%;
+  }
+
+  .contact .text-wrapper {
+    top: -39%;
+  }
+}
